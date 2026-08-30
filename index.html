@@ -3,53 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toolbox — The Universal Telegram Media Assistant</title>
-  <meta name="description" content="Download from 1700+ sites in up to 8K, transcribe voice to text with Whisper AI, convert formats and compress files losslessly in Telegram.">
+  <title>Toolbox — Professional Telegram Media Assistant</title>
+  <meta name="description" content="One Telegram bot to download from 1700+ sites in up to 8K, transcribe voice to text with Whisper AI, convert formats, and compress files losslessly.">
   
-  <!-- CSS Stylesheets -->
+  <!-- CSS Stylesheets (Linear Design System) -->
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/linear.css">
 
-  <!-- Favicon / SVG Icon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f5d4'><path d='M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z'/></svg>">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235e6ad2'><path d='M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z'/></svg>">
 </head>
 <body>
 
-  <!-- Dynamic Cyber Canvas & Ambient Lighting -->
-  <canvas id="cyber-canvas"></canvas>
-  <div class="cyber-grid-overlay"></div>
-  <div class="ambient-glow top-right"></div>
-  <div class="ambient-glow bottom-left"></div>
+  <!-- Linear Ambient Glow Mesh -->
+  <div class="linear-ambient-glow"></div>
 
-  <!-- Site Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="brand-logo">
-        <div class="brand-icon-box">🧰</div>
+  <!-- Header & Navigation -->
+  <header class="linear-header">
+    <div class="container linear-nav-inner">
+      <a href="#" class="linear-brand">
+        <div class="linear-brand-icon">⚡</div>
         <span>Toolbox</span>
-        <span class="brand-status"><span class="pulse-dot"></span> LIVE</span>
+        <span class="linear-version-badge">v0.50</span>
       </a>
 
       <nav>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#features" class="nav-link" data-i18n="nav.features">Возможности</a></li>
-          <li><a href="#simulator" class="nav-link" data-i18n="nav.simulator">Демонстрация</a></li>
-          <li><a href="#platforms" class="nav-link" data-i18n="nav.platforms">1700+ сайтов</a></li>
-          <li><a href="#compression" class="nav-link" data-i18n="nav.compressor">Сжатие</a></li>
-          <li><a href="#transcription" class="nav-link" data-i18n="nav.transcriber">Whisper ИИ</a></li>
-          <li><a href="#news" class="nav-link" data-i18n="nav.news">Новости</a></li>
-          <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+        <ul class="linear-nav-links" id="nav-menu">
+          <li><a href="#capabilities" class="linear-nav-link" data-i18n="nav.capabilities">Возможности</a></li>
+          <li><a href="#workflow" class="linear-nav-link" data-i18n="nav.workflow">Как это работает</a></li>
+          <li><a href="#matrix" class="linear-nav-link" data-i18n="nav.matrix">Матрица действий</a></li>
+          <li><a href="#platforms" class="linear-nav-link" data-i18n="nav.platforms">1700+ сервисов</a></li>
+          <li><a href="#tariffs" class="linear-nav-link" data-i18n="nav.tariffs">Тарифы</a></li>
+          <li><a href="#faq" class="linear-nav-link" data-i18n="nav.faq">FAQ</a></li>
         </ul>
       </nav>
 
-      <div class="header-actions">
-        <!-- Multi-language Dropdown (10 Languages) -->
+      <div class="linear-header-actions">
+        <!-- 10 Languages Dropdown -->
         <div class="lang-dropdown-wrapper">
           <button class="lang-btn" id="lang-toggle-btn" aria-label="Change Language">
             <span id="current-lang-flag">🇷🇺</span>
             <span id="current-lang-name">Русский</span>
-            <span style="font-size: 0.7rem; opacity: 0.7;">▼</span>
+            <span style="font-size: 0.65rem; opacity: 0.6;">▼</span>
           </button>
           <div class="lang-dropdown">
             <a href="#" class="lang-item active" data-lang="ru"><span>🇷🇺</span> Русский</a>
@@ -65,8 +60,8 @@
           </div>
         </div>
 
-        <a href="https://t.me/Toolbox_Bot" target="_blank" class="btn btn-primary" data-i18n="nav.open_bot">
-          Запустить бота ⚡
+        <a href="https://t.me/Toolbox_Bot" target="_blank" class="btn-linear btn-linear-brand" data-i18n="nav.open_bot">
+          Открыть @Toolbox_Bot ↗
         </a>
 
         <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
@@ -79,686 +74,679 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-content">
-      <div class="cyber-badge floating" data-i18n="hero.badge">
-        ⚡ NEXT-GEN TELEGRAM MEDIA SUITE
+  <section class="hero-linear">
+    <div class="container">
+      <div class="hero-pill-badge">
+        <span class="pulse-point"></span>
+        <span data-i18n="hero.badge">Медиа-ассистент и ИИ-автоматизация для Telegram</span>
       </div>
 
-      <h1 class="hero-title">
-        <span data-i18n="hero.title_p1">Универсальный</span>
-        <span class="title-gradient" data-i18n="hero.title_highlight">швейцарский нож</span>
-        <span data-i18n="hero.title_p2">для медиа и файлов</span>
+      <h1 class="hero-headline-linear">
+        <span data-i18n="hero.headline_p1">Один бот для скачивания, транскрибации,</span><br>
+        <span class="hero-gradient-text" data-i18n="hero.headline_highlight">конвертации и сжатия медиа.</span>
       </h1>
 
-      <p class="hero-subtitle" data-i18n="hero.subtitle">
-        Скачивание с 1700+ сайтов в качестве до 8K, голосовые и видео в текст через Whisper ИИ, конвертация любых форматов и умное сжатие без потери качества. Всё внутри Telegram.
+      <p class="hero-subheadline-linear" data-i18n="hero.subheadline">
+        Отправьте любую ссылку, видео, голосовое сообщение или документ в @Toolbox_Bot. Бот мгновенно определит формат и предложит точные действия в Telegram без рекламы и сторонних сайтов.
       </p>
 
-      <div class="hero-cta-group">
-        <a href="https://t.me/Toolbox_Bot" target="_blank" class="btn btn-primary btn-glow-tg" data-i18n="hero.cta_primary">
-          Открыть в Telegram бесплатно 🚀
+      <div class="hero-cta-linear">
+        <a href="https://t.me/Toolbox_Bot" target="_blank" class="btn-linear btn-linear-primary" data-i18n="hero.cta_primary">
+          Запустить в Telegram бесплатно
         </a>
-        <a href="#simulator" class="btn btn-secondary" data-i18n="hero.cta_secondary">
-          Попробовать симулятор ⚡
+        <a href="#capabilities" class="btn-linear btn-linear-secondary" data-i18n="hero.cta_secondary">
+          Изучить спецификацию ↓
         </a>
       </div>
 
-      <!-- Telemetry Ribbon -->
-      <div class="telemetry-ribbon">
-        <div class="telemetry-item">
-          <span class="pulse-dot"></span>
-          <span data-i18n="hero.telemetry_extractors">1700+ экстракторов активны</span>
+      <!-- Real Workflow Diagram (No Fake Terminal) -->
+      <div class="workflow-box" id="workflow">
+        <div class="workflow-header">
+          <div class="workflow-title-box">
+            <span>⚙️</span>
+            <span data-i18n="hero.workflow_title">Сквозной процесс обработки контента в боте</span>
+          </div>
+          <span class="tech-tag blue">FFMPEG & YT-DLP PIPELINE</span>
         </div>
-        <div class="telemetry-item">
-          <span>⚡</span>
-          <span><strong id="telemetry-latency-val">42ms</strong> latency</span>
-        </div>
-        <div class="telemetry-item">
-          <span>🛡️</span>
-          <span data-i18n="hero.telemetry_privacy">Без логов и полная приватность</span>
-        </div>
-      </div>
 
-      <!-- Stats Grid -->
-      <div class="stats-grid reveal-on-scroll">
-        <div class="stat-card">
-          <div class="stat-value" data-i18n="hero.stats_downloads">10M+</div>
-          <div class="stat-label" data-i18n="hero.stats_downloads_label">Обработано файлов</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value" data-i18n="hero.stats_platforms">1,700+</div>
-          <div class="stat-label" data-i18n="hero.stats_platforms_label">Поддерживаемых сайтов</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value" data-i18n="hero.stats_uptime">99.98%</div>
-          <div class="stat-label" data-i18n="hero.stats_uptime_label">Аптайм сервиса</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value" data-i18n="hero.stats_rating">4.9/5</div>
-          <div class="stat-label" data-i18n="hero.stats_rating_label">Оценка пользователей</div>
+        <div class="workflow-grid">
+          <!-- Step 1 -->
+          <div class="workflow-card">
+            <div class="workflow-step-num" data-i18n="hero.step1_num">Шаг 01</div>
+            <div class="workflow-card-title" data-i18n="hero.step1_title">Входные данные</div>
+            <p class="workflow-item-list" data-i18n="hero.step1_desc">
+              Ссылка из 1700+ сайтов, видеофайл, голосовое сообщение, фото или PDF-документ.
+            </p>
+          </div>
+
+          <div class="workflow-arrow">➔</div>
+
+          <!-- Step 2 -->
+          <div class="workflow-card" style="border-color: var(--accent-brand-border);">
+            <div class="workflow-step-num" style="color: #828fff;" data-i18n="hero.step2_num">Шаг 02</div>
+            <div class="workflow-card-title" data-i18n="hero.step2_title">Умное распознавание</div>
+            <p class="workflow-item-list" data-i18n="hero.step2_desc">
+              Бот анализирует сигнатуру и возвращает контекстную клавиатуру точных действий.
+            </p>
+          </div>
+
+          <div class="workflow-arrow">➔</div>
+
+          <!-- Step 3 -->
+          <div class="workflow-card">
+            <div class="workflow-step-num" style="color: #34d399;" data-i18n="hero.step3_num">Шаг 03</div>
+            <div class="workflow-card-title" data-i18n="hero.step3_title">Результат</div>
+            <p class="workflow-item-list" data-i18n="hero.step3_desc">
+              Чистое видео до 8K, расшифровка Whisper AI, сжатый файл или облачная ссылка до 20 ГБ.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Simulator Section -->
-  <section class="simulator-section" id="simulator">
+  <!-- Core Capabilities (Linear Bento Grid) -->
+  <section class="bento-section" id="capabilities">
     <div class="container">
-      <div class="section-header">
-        <div class="cyber-badge" data-i18n="simulator.title">ИНТЕРАКТИВНЫЙ ТЕРМИНАЛ БОТА</div>
-        <h2 class="section-title" data-i18n="simulator.subtitle">Проверьте работу бота прямо здесь</h2>
+      <div class="section-header-linear">
+        <span class="section-label-linear" data-i18n="bento.badge">ТЕХНИЧЕСКИЙ АРСЕНАЛ</span>
+        <h2 class="section-title-linear" data-i18n="bento.title">Полный набор инструментов для медиафайлов</h2>
+        <p class="section-desc-linear" data-i18n="bento.desc">
+          Каждая функция построена на проверенном промышленном стеке: yt-dlp, FFmpeg, Groq Whisper и Pillow.
+        </p>
       </div>
 
-      <div class="simulator-box reveal-on-scroll">
-        <div class="sim-header-bar">
-          <div class="sim-traffic-lights">
-            <span class="sim-light red"></span>
-            <span class="sim-light yellow"></span>
-            <span class="sim-light green"></span>
-          </div>
-          <div id="sim-status-badge" class="brand-status">
-            <span class="pulse-dot"></span> <span>[STATUS: READY]</span>
-          </div>
-        </div>
-
-        <div class="sim-tabs">
-          <button class="sim-tab active" data-tab="url" data-i18n="simulator.tab_url">🔗 Загрузка по ссылке</button>
-          <button class="sim-tab" data-tab="audio" data-i18n="simulator.tab_audio">🎙️ Whisper ИИ Голос</button>
-          <button class="sim-tab" data-tab="compress" data-i18n="simulator.tab_compress">🗜️ Сжатие видео</button>
-          <button class="sim-tab" data-tab="convert" data-i18n="simulator.tab_convert">🔄 Любой в любой</button>
-        </div>
-
-        <div class="sim-content">
-          <div class="sim-input-row">
-            <div class="sim-input-wrapper">
-              <input type="text" id="sim-input" class="sim-input" placeholder="Вставьте ссылку YouTube, TikTok, Instagram, Twitter..." data-i18n-attr="placeholder:simulator.input_placeholder" value="https://www.tiktok.com/@tech_guru/video/738291048201">
+      <div class="bento-grid">
+        <!-- Card 1 (Col span 2): Universal Downloader -->
+        <div class="bento-card col-span-2">
+          <div>
+            <div class="bento-top-row">
+              <div class="bento-icon-box">📥</div>
+              <span class="tech-tag blue">YT-DLP CORE</span>
             </div>
-            <button id="sim-run-btn" class="sim-run-btn" data-i18n="simulator.btn_process">
-              Выполнить операцию ⚡
-            </button>
+            <h3 class="bento-title" data-i18n="bento.c1_title">Универсальный загрузчик медиа</h3>
+            <p class="bento-desc" data-i18n="bento.c1_desc">
+              Скачивание видео и аудиопотоков с YouTube, TikTok, Instagram, Twitter/X, VK, Pinterest, SoundCloud и ещё 1700+ платформ в исходном качестве.
+            </p>
           </div>
-
-          <div class="sim-presets-bar">
-            <span class="sim-preset-label" data-i18n="simulator.preset_label">Быстрые тесты:</span>
-            <button class="sim-preset-btn active" data-preset="tiktok" data-i18n="simulator.preset_tiktok">TikTok (Без водяного знака)</button>
-            <button class="sim-preset-btn" data-preset="youtube" data-i18n="simulator.preset_youtube">YouTube 4K Ultra</button>
-            <button class="sim-preset-btn" data-preset="insta" data-i18n="simulator.preset_insta">Instagram Reels</button>
-            <button class="sim-preset-btn" data-preset="voice" data-i18n="simulator.preset_voice">Голосовое (ИИ)</button>
-            <button class="sim-preset-btn" data-preset="compress" data-i18n="simulator.preset_compress">Тяжелое видео (84 МБ)</button>
+          <div class="bento-specs">
+            <div class="bento-spec-row">
+              <span class="bento-spec-label" data-i18n="bento.c1_spec1">Разрешение</span>
+              <span class="bento-spec-val" data-i18n="bento.c1_spec1_v">до 8K Ultra 60fps</span>
+            </div>
+            <div class="bento-spec-row">
+              <span class="bento-spec-label" data-i18n="bento.c1_spec2">Аудиодорожка</span>
+              <span class="bento-spec-val" data-i18n="bento.c1_spec2_v">MP3 320 kbps / Исходный битрейт</span>
+            </div>
+            <div class="bento-spec-row">
+              <span class="bento-spec-label" data-i18n="bento.c1_spec3">Водяные знаки</span>
+              <span class="bento-spec-val" data-i18n="bento.c1_spec3_v">Автоматическое удаление</span>
+            </div>
           </div>
+        </div>
 
-          <div class="sim-grid-layout">
-            <!-- Terminal Logs Pane -->
-            <div class="sim-terminal-pane">
-              <div class="sim-terminal-header">
-                <span>TERMINAL://CLUSTER_DAEMON_V2</span>
+        <!-- Card 2: Neural Transcriber -->
+        <div class="bento-card">
+          <div>
+            <div class="bento-top-row">
+              <div class="bento-icon-box">🎙️</div>
+              <span class="tech-tag emerald">GROQ WHISPER</span>
+            </div>
+            <h3 class="bento-title" data-i18n="bento.c2_title">Нейросетевая транскрибация Whisper</h3>
+            <p class="bento-desc" data-i18n="bento.c2_desc">
+              Преобразование голосовых сообщений, аудиозаписей, подкастов и видеороликов в структурированный текст со знаками препинания и таймкодами.
+            </p>
+          </div>
+          <div class="bento-specs">
+            <div class="bento-spec-row">
+              <span class="bento-spec-label" data-i18n="bento.c2_spec1">Языки</span>
+              <span class="bento-spec-val" data-i18n="bento.c2_spec1_v">100+ мировых языков</span>
+            </div>
+            <div class="bento-spec-row">
+              <span class="bento-spec-label" data-i18n="bento.c2_spec2">Движок</span>
+              <span class="bento-spec-val" data-i18n="bento.c2_spec2_v">Whisper Large-v3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: TikTok & Instagram Carousels -->
+        <div class="bento-card">
+          <div>
+            <div class="bento-top-row">
+              <div class="bento-icon-box">🖼️</div>
+              <span class="tech-tag">CAROUSEL SPLIT</span>
+            </div>
+            <h3 class="bento-title" data-i18n="bento.c3_title">Слайдшоу TikTok & Instagram</h3>
+            <p class="bento-desc" data-i18n="bento.c3_desc">
+              Разбор фото-каруселей TikTok и Instagram на отдельные кадры в исходном разрешении, выгрузка саундтрека или сборка в видео-слайдшоу.
+            </p>
+          </div>
+          <div class="tech-tag" style="width: fit-content;">Photo + Audio Sync</div>
+        </div>
+
+        <!-- Card 4: 4-Tier Smart Compression -->
+        <div class="bento-card">
+          <div>
+            <div class="bento-top-row">
+              <div class="bento-icon-box">🗜️</div>
+              <span class="tech-tag amber">FFMPEG H.265</span>
+            </div>
+            <h3 class="bento-title" data-i18n="bento.c4_title">4-уровневое умное сжатие</h3>
+            <p class="bento-desc" data-i18n="bento.c4_desc">
+              Двухпроходное сжатие видео, аудио и изображений с четырьмя пресетами (High, Medium, Light, Max) для обхода лимитов Telegram.
+            </p>
+          </div>
+          <div class="bento-specs">
+            <div class="bento-spec-row">
+              <span class="bento-spec-label">Пресеты</span>
+              <span class="bento-spec-val">High • Med • Low • Max</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Media Converter & PDF Studio -->
+        <div class="bento-card">
+          <div>
+            <div class="bento-top-row">
+              <div class="bento-icon-box">🔄</div>
+              <span class="tech-tag">CONVERTER & PDF</span>
+            </div>
+            <h3 class="bento-title" data-i18n="bento.c5_title">Конвертер форматов и PDF Studio</h3>
+            <p class="bento-desc" data-i18n="bento.c5_desc">
+              Конвертация между MP4, MKV, AVI, WebM; MP3, WAV, OGG, FLAC; ресайз картинок и объединение фотографий в один многостраничный PDF.
+            </p>
+          </div>
+          <div class="tech-tag" style="width: fit-content;">Any-to-Any Matrix</div>
+        </div>
+
+        <!-- Card 6 (Col span 3): 20GB Cloud Vault & Utilities -->
+        <div class="bento-card col-span-2" style="grid-column: span 3;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div>
+              <div class="bento-top-row">
+                <div class="bento-icon-box">☁️</div>
+                <span class="tech-tag blue">PIXELDRAIN & LITTERBOX</span>
               </div>
-              <div id="sim-logs" class="sim-logs">
-                <div class="log-line glow-text">[SYSTEM READY] Listening for input payloads...</div>
+              <h3 class="bento-title" data-i18n="bento.c6_title">Облачное хранилище до 20 ГБ и утилиты</h3>
+              <p class="bento-desc" data-i18n="bento.c6_desc">
+                Автоматическая загрузка файлов больше 20 МБ на скоростные сервера Pixeldrain и Litterbox, генерация QR-кодов и расчет контрольных сумм MD5/SHA-256.
+              </p>
+            </div>
+            <div class="bento-specs" style="align-self: center;">
+              <div class="bento-spec-row">
+                <span class="bento-spec-label">Лимит Telegram Bot API</span>
+                <span class="bento-spec-val">20 MB (стандарт)</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-spec-label">Облачный шлюз Toolbox</span>
+                <span class="bento-spec-val" style="color: #34d399;">до 20,000 MB (20 GB)</span>
+              </div>
+              <div class="bento-spec-row">
+                <span class="bento-spec-label">Хеширование файлов</span>
+                <span class="bento-spec-val">MD5 • SHA-256</span>
               </div>
             </div>
-
-            <!-- Preview Output Pane -->
-            <div id="sim-preview" class="sim-preview-pane">
-              <!-- Dynamically populated by simulator.js -->
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Core Features Arsenal -->
-  <section class="features-section" id="features">
+  <!-- Interactive Action Matrix (Matching Real Bot Code) -->
+  <section class="matrix-section" id="matrix">
     <div class="container">
-      <div class="section-header">
-        <div class="cyber-badge" data-i18n="features.badge">АРСЕНАЛ ВОЗМОЖНОСТЕЙ</div>
-        <h2 class="section-title" data-i18n="features.title">Заменяет 10 разных приложений</h2>
-        <p class="section-subtitle" data-i18n="features.subtitle">Построен на промышленном стеке ffmpeg, yt-dlp и нейросетях Groq Whisper.</p>
-      </div>
-
-      <div class="features-grid">
-        <!-- Feature 1 -->
-        <div class="feature-card reveal-on-scroll reveal-delay-1">
-          <div class="feature-top-meta">
-            <div class="feature-icon-box">📥</div>
-            <span class="feature-tag-badge" data-i18n="features.f1_badge">1700+ Сайтов</span>
-          </div>
-          <h3 class="feature-title" data-i18n="features.f1_title">Универсальный 8K Загрузчик</h3>
-          <p class="feature-desc" data-i18n="features.f1_desc">
-            Скачивание видео и аудио с 1700+ сайтов (YouTube, TikTok, Instagram, Twitter/X, VK, Reddit, Facebook) в оригинальном качестве без водяных знаков.
-          </p>
-        </div>
-
-        <!-- Feature 2 -->
-        <div class="feature-card reveal-on-scroll reveal-delay-2">
-          <div class="feature-top-meta">
-            <div class="feature-icon-box">🎙️</div>
-            <span class="feature-tag-badge" data-i18n="features.f2_badge">Whisper ИИ</span>
-          </div>
-          <h3 class="feature-title" data-i18n="features.f2_title">Нейро-Транскрибатор Whisper Pro</h3>
-          <p class="feature-desc" data-i18n="features.f2_desc">
-            Мгновенное превращение голосовых сообщений, подкастов, лекций и видео в структурированный текст со знаками препинания и таймкодами.
-          </p>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="feature-card reveal-on-scroll reveal-delay-3">
-          <div class="feature-top-meta">
-            <div class="feature-icon-box">🗜️</div>
-            <span class="feature-tag-badge" data-i18n="features.f3_badge">FFmpeg Turbo</span>
-          </div>
-          <h3 class="feature-title" data-i18n="features.f3_title">Умное сжатие без потери качества</h3>
-          <p class="feature-desc" data-i18n="features.f3_desc">
-            Уменьшение веса видео и картинок до 85% без видимых артефактов. Идеально для обхода лимитов Telegram и экономии памяти.
-          </p>
-        </div>
-
-        <!-- Feature 4 -->
-        <div class="feature-card reveal-on-scroll reveal-delay-1">
-          <div class="feature-top-meta">
-            <div class="feature-icon-box">🔄</div>
-            <span class="feature-tag-badge" data-i18n="features.f4_badge">Все форматы</span>
-          </div>
-          <h3 class="feature-title" data-i18n="features.f4_title">Медиа-Матрица конвертации</h3>
-          <p class="feature-desc" data-i18n="features.f4_desc">
-            Быстрое преобразование форматов: MP4, MKV, AVI, WebM, MP3, OGG, WAV, FLAC, WebP, PNG, JPG, или сборка пачки фотографий в единый PDF.
-          </p>
-        </div>
-
-        <!-- Feature 5 -->
-        <div class="feature-card reveal-on-scroll reveal-delay-2">
-          <div class="feature-top-meta">
-            <div class="feature-icon-box">☁️</div>
-            <span class="feature-tag-badge" data-i18n="features.f5_badge">До 20 ГБ</span>
-          </div>
-          <h3 class="feature-title" data-i18n="features.f5_title">Облачное хранилище до 20 ГБ</h3>
-          <p class="feature-desc" data-i18n="features.f5_desc">
-            Файл превышает лимит Telegram? Toolbox автоматически загрузит его в скоростное хранилище (Pixeldrain / Litterbox) с прямой ссылкой.
-          </p>
-        </div>
-
-        <!-- Feature 6 -->
-        <div class="feature-card reveal-on-scroll reveal-delay-3">
-          <div class="feature-top-meta">
-            <div class="feature-icon-box">🔑</div>
-            <span class="feature-tag-badge" data-i18n="features.f6_badge">Утилиты & Хеш</span>
-          </div>
-          <h3 class="feature-title" data-i18n="features.f6_title">Визуальные утилиты и безопасность</h3>
-          <p class="feature-desc" data-i18n="features.f6_desc">
-            Генерация QR-кодов за секунду, ресайз изображений, извлечение метаданных и мгновенный расчет контрольных сумм MD5 и SHA-256.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Compression Slider Section -->
-  <section class="compression-section" id="compression">
-    <div class="container">
-      <div class="section-header">
-        <div class="cyber-badge" data-i18n="compression_section.badge">ИНТЕЛЛЕКТУАЛЬНОЕ СЖАТИЕ</div>
-        <h2 class="section-title" data-i18n="compression_section.title">Максимальная четкость при минимальном весе</h2>
-        <p class="section-subtitle" data-i18n="compression_section.subtitle">
-          Подвигайте ползунок, чтобы сравнить исходный тяжелый ролик и результат двухпроходного сжатия Toolbox.
+      <div class="section-header-linear">
+        <span class="section-label-linear" data-i18n="matrix.badge">СПРАВОЧНИК КОМАНД</span>
+        <h2 class="section-title-linear" data-i18n="matrix.title">Интерактивная матрица действий</h2>
+        <p class="section-desc-linear" data-i18n="matrix.desc">
+          Посмотрите, какие кнопки и функции активирует бот при получении каждого типа контента.
         </p>
       </div>
 
-      <div class="compression-wrapper reveal-on-scroll">
-        <div class="compare-container">
-          <!-- After Layer (Optimized) -->
-          <div class="compare-layer after">
-            <div class="compare-badge" data-i18n="compression_section.compressed_label">Toolbox сжатие: 12.8 МБ (-85%)</div>
-            <div class="compare-visual-content">
-              <span style="font-size: 3rem;">⚡</span>
-              <p style="font-family: var(--font-mono); color: var(--neon-cyan); font-size: 0.9rem;">ENCODED: H.265 CRF 23 OPTIMIZED</p>
-            </div>
-            <div style="font-size: 0.75rem; color: var(--text-muted);">ZERO VISIBLE ARTIFACTS</div>
-          </div>
-
-          <!-- Before Layer (Original) -->
-          <div class="compare-layer before">
-            <div class="compare-badge" data-i18n="compression_section.original_label">Исходный файл: 84.6 МБ</div>
-            <div class="compare-visual-content">
-              <span style="font-size: 3rem;">📦</span>
-              <p style="font-family: var(--font-mono); color: var(--neon-pink); font-size: 0.9rem;">RAW SOURCE UNCOMPRESSED</p>
-            </div>
-            <div style="font-size: 0.75rem; color: var(--text-muted);">EXCEEDS TELEGRAM LIMITS</div>
-          </div>
-
-          <!-- Slider Split Handle -->
-          <div class="compare-divider">
-            <div class="compare-handle">↔</div>
-          </div>
-
-          <input type="range" id="compare-slider" class="compare-slider-input" min="0" max="100" value="50">
+      <div class="matrix-box">
+        <div class="matrix-tabs">
+          <button class="matrix-tab-btn active" data-tab="url" data-i18n="matrix.tab_url">Ссылки и Соцсети</button>
+          <button class="matrix-tab-btn" data-tab="video" data-i18n="matrix.tab_video">Видеофайлы</button>
+          <button class="matrix-tab-btn" data-tab="audio" data-i18n="matrix.tab_audio">Голос и Аудио</button>
+          <button class="matrix-tab-btn" data-tab="photo" data-i18n="matrix.tab_photo">Фото и PDF</button>
+          <button class="matrix-tab-btn" data-tab="doc" data-i18n="matrix.tab_doc">Документы и Архивы</button>
         </div>
 
-        <div class="compression-stats">
-          <div class="comp-stat-item">
-            <div class="comp-stat-header">ЭФФЕКТИВНОСТЬ</div>
-            <div class="comp-stat-val" data-i18n="compression_section.stat_saved">85% Экономии места</div>
-          </div>
-          <div class="comp-stat-item">
-            <div class="comp-stat-header">КОДЕК ОБРАБОТКИ</div>
-            <div class="comp-stat-val" data-i18n="compression_section.stat_codec">H.265 / AV1 Smart Pass</div>
-          </div>
-          <div class="comp-stat-item">
-            <div class="comp-stat-header">СКОРОСТЬ СЖАТИЯ</div>
-            <div class="comp-stat-val" data-i18n="compression_section.stat_speed">&lt; 3.5 сек Время сжатия</div>
-          </div>
+        <!-- Tab 1: URL / Links -->
+        <div class="matrix-content-pane active" id="pane-url">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th data-i18n="matrix.th_input">Тип контента на входе</th>
+                <th data-i18n="matrix.th_action">Действие в боте</th>
+                <th data-i18n="matrix.th_engine">Обработчик</th>
+                <th data-i18n="matrix.th_output">Результат</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>YouTube URL</strong></td>
+                <td><span class="action-badge">📥 Скачать видео</span> <span class="action-badge">🎵 Скачать аудио</span></td>
+                <td><code>yt-dlp</code> + <code>ffmpeg</code></td>
+                <td>Видео до 8K или MP3 320 kbps</td>
+              </tr>
+              <tr>
+                <td><strong>TikTok / Instagram Carousel</strong></td>
+                <td><span class="action-badge">🖼 Только фото</span> <span class="action-badge">🎬 Слайдшоу</span></td>
+                <td><code>tiktok_service</code></td>
+                <td>Все фото по отдельности или MP4 видео с музыкой</td>
+              </tr>
+              <tr>
+                <td><strong>Instagram Reels / Stories</strong></td>
+                <td><span class="action-badge">📥 Скачать видео</span> <span class="action-badge">🖼 Обложка</span></td>
+                <td><code>instagram_service</code></td>
+                <td>Чистое Full HD видео без вотермарок</td>
+              </tr>
+              <tr>
+                <td><strong>Любой веб-URL</strong></td>
+                <td><span class="action-badge">📷 QR-код</span> <span class="action-badge">🔗 Сократить ссылку</span></td>
+                <td><code>utility_service</code></td>
+                <td>QR изображение или компактный короткий URL</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tab 2: Video Files -->
+        <div class="matrix-content-pane" id="pane-video">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th data-i18n="matrix.th_input">Тип контента на входе</th>
+                <th data-i18n="matrix.th_action">Действие в боте</th>
+                <th data-i18n="matrix.th_engine">Обработчик</th>
+                <th data-i18n="matrix.th_output">Результат</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>MP4, MKV, AVI, WebM</strong></td>
+                <td><span class="action-badge">🔄 Конвертировать</span></td>
+                <td><code>conversion_service</code></td>
+                <td>Быстрое перекодирование в выбранный контейнер</td>
+              </tr>
+              <tr>
+                <td><strong>Тяжелый видеофайл</strong></td>
+                <td><span class="action-badge">🗜 Сжать</span> (High, Med, Low, Max)</td>
+                <td><code>ffmpeg CRF pass</code></td>
+                <td>Уменьшение размера файла до 85%</td>
+              </tr>
+              <tr>
+                <td><strong>Видео с речью</strong></td>
+                <td><span class="action-badge">🎙 Транскрипция</span></td>
+                <td><code>Groq Whisper Pro</code></td>
+                <td>Текстовая расшифровка с таймкодами</td>
+              </tr>
+              <tr>
+                <td><strong>Видео > 20 МБ</strong></td>
+                <td><span class="action-badge">☁️ Загрузить на сервер</span></td>
+                <td><code>Pixeldrain (20GB)</code></td>
+                <td>Прямая ссылка на скачивание на высокой скорости</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tab 3: Audio & Voice -->
+        <div class="matrix-content-pane" id="pane-audio">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th data-i18n="matrix.th_input">Тип контента на входе</th>
+                <th data-i18n="matrix.th_action">Действие в боте</th>
+                <th data-i18n="matrix.th_engine">Обработчик</th>
+                <th data-i18n="matrix.th_output">Результат</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Голосовое сообщение Telegram</strong></td>
+                <td><span class="action-badge">🎙 Транскрипция</span></td>
+                <td><code>Groq Whisper</code></td>
+                <td>Мгновенный текст сообщения со знаками препинания</td>
+              </tr>
+              <tr>
+                <td><strong>MP3, WAV, OGG, FLAC, M4A</strong></td>
+                <td><span class="action-badge">🔄 Конвертировать</span></td>
+                <td><code>ffmpeg audio matrix</code></td>
+                <td>Преобразование в любой аудиоформат</td>
+              </tr>
+              <tr>
+                <td><strong>Длинный подкаст / Лекция</strong></td>
+                <td><span class="action-badge">🎙 Транскрипция</span></td>
+                <td><code>Whisper Large-v3</code></td>
+                <td>Полный конспект беседы с разбивкой по смыслу</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tab 4: Photos & PDF -->
+        <div class="matrix-content-pane" id="pane-photo">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th data-i18n="matrix.th_input">Тип контента на входе</th>
+                <th data-i18n="matrix.th_action">Действие в боте</th>
+                <th data-i18n="matrix.th_engine">Обработчик</th>
+                <th data-i18n="matrix.th_output">Результат</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Изображения (PNG, JPG, WebP)</strong></td>
+                <td><span class="action-badge">📄 В PDF</span></td>
+                <td><code>Pillow (PIL)</code></td>
+                <td>Объединение фото в один многостраничный PDF</td>
+              </tr>
+              <tr>
+                <td><strong>Большая фотография</strong></td>
+                <td><span class="action-badge">📐 Изменить размер</span> <span class="action-badge">🗜 Сжать</span></td>
+                <td><code>image_service</code></td>
+                <td>Оптимизированное изображение без артефактов</td>
+              </tr>
+              <tr>
+                <td><strong>Любое фото / картинка</strong></td>
+                <td><span class="action-badge">🔑 Хэш файла</span></td>
+                <td><code>hashlib</code></td>
+                <td>MD5 и SHA-256 контрольные суммы</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tab 5: Documents & Archives -->
+        <div class="matrix-content-pane" id="pane-doc">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th data-i18n="matrix.th_input">Тип контента на входе</th>
+                <th data-i18n="matrix.th_action">Действие в боте</th>
+                <th data-i18n="matrix.th_engine">Обработчик</th>
+                <th data-i18n="matrix.th_output">Результат</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>DOCX, PDF, TXT</strong></td>
+                <td><span class="action-badge">📝 Извлечь текст</span></td>
+                <td><code>document_service</code></td>
+                <td>Чистый текст файла прямо в чат Telegram</td>
+              </tr>
+              <tr>
+                <td><strong>Текстовый документ</strong></td>
+                <td><span class="action-badge">📄 В PDF</span></td>
+                <td><code>pdf generator</code></td>
+                <td>Скомпилированный PDF документ</td>
+              </tr>
+              <tr>
+                <td><strong>Любой тяжелый файл</strong></td>
+                <td><span class="action-badge">🗜 Сжать (ZIP)</span></td>
+                <td><code>zipfile stream</code></td>
+                <td>Компактный ZIP-архив</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Whisper AI Transcription Section -->
-  <section class="transcription-section" id="transcription">
+  <!-- Supported Platforms -->
+  <section class="platforms-linear-section" id="platforms">
     <div class="container">
-      <div class="section-header">
-        <div class="cyber-badge" data-i18n="transcription_section.badge">НЕЙРОСЕТЕВАЯ ТРАНСКРИБАЦИЯ</div>
-        <h2 class="section-title" data-i18n="transcription_section.title">Превращайте часы аудио в удобный текст</h2>
-        <p class="section-subtitle" data-i18n="transcription_section.subtitle">
-          На базе сверхбыстрой модели Groq Whisper Pro — мгновенная расшифровка голосовых и видео на 100+ языках.
+      <div class="section-header-linear">
+        <span class="section-label-linear" data-i18n="platforms.badge">ЭКОСИСТЕМА</span>
+        <h2 class="section-title-linear" data-i18n="platforms.title">Поддерживает 1700+ сервисов</h2>
+        <p class="section-desc-linear" data-i18n="platforms.desc">
+          Полная совместимость с популярными медиасетями и облачными хранилищами.
         </p>
       </div>
 
-      <div class="transcription-wrapper reveal-on-scroll">
-        <div class="transcription-demo-box">
-          <div class="audio-player-mock">
-            <div class="audio-play-circle">▶</div>
-            <div class="audio-track-info">
-              <div class="audio-title" data-i18n="transcription_section.sample_voice">Голосовое сообщение (0:48)</div>
-              <div class="audio-subtitle">TELEGRAM_VOICE_NOTE_32K.OGG</div>
+      <div class="platforms-linear-grid">
+        <div class="platform-linear-card">
+          <div class="platform-left">
+            <div class="platform-icon-circle">▶️</div>
+            <div>
+              <div class="platform-title-main">YouTube</div>
+              <div class="platform-sub-cap">8K • 4K • 1080p • MP3</div>
             </div>
-            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--neon-cyan);">0:48</span>
           </div>
-
-          <div class="sim-wave-bars">
-            <span class="wave-bar" style="height: 40%;"></span>
-            <span class="wave-bar" style="height: 75%;"></span>
-            <span class="wave-bar" style="height: 50%;"></span>
-            <span class="wave-bar" style="height: 90%;"></span>
-            <span class="wave-bar" style="height: 35%;"></span>
-            <span class="wave-bar" style="height: 80%;"></span>
-            <span class="wave-bar" style="height: 60%;"></span>
-            <span class="wave-bar" style="height: 100%;"></span>
-            <span class="wave-bar" style="height: 45%;"></span>
-            <span class="wave-bar" style="height: 85%;"></span>
-            <span class="wave-bar" style="height: 70%;"></span>
-            <span class="wave-bar" style="height: 30%;"></span>
-            <span class="wave-bar" style="height: 95%;"></span>
-            <span class="wave-bar" style="height: 65%;"></span>
-            <span class="wave-bar" style="height: 80%;"></span>
-            <span class="wave-bar" style="height: 55%;"></span>
-          </div>
+          <span class="tech-tag blue">8K</span>
         </div>
 
-        <div>
-          <div class="transcript-output-card">
-            <p data-i18n="transcription_section.transcription_text">
-              Привет! Отправляю таймлайн проекта. Мы успешно проверили все 1700 экстракторов, подключили нейросеть Whisper, а тесты компрессии показали сжатие на 85% без потери качества видео. Всё полностью готово к релизу!
-            </p>
-          </div>
-          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.84rem;">
+        <div class="platform-linear-card">
+          <div class="platform-left">
+            <div class="platform-icon-circle">🎵</div>
             <div>
-              <span style="color: var(--neon-cyan);">✓</span> <span data-i18n="transcription_section.accuracy_label">99.4% Точность</span>
-            </div>
-            <div>
-              <span style="color: var(--neon-purple);">🌐</span> <span data-i18n="transcription_section.languages_label">100+ Языков</span>
+              <div class="platform-title-main">TikTok</div>
+              <div class="platform-sub-cap">No Watermark • Slides</div>
             </div>
           </div>
+          <span class="tech-tag emerald">Clean</span>
+        </div>
+
+        <div class="platform-linear-card">
+          <div class="platform-left">
+            <div class="platform-icon-circle">📸</div>
+            <div>
+              <div class="platform-title-main">Instagram</div>
+              <div class="platform-sub-cap">Reels • Stories • Posts</div>
+            </div>
+          </div>
+          <span class="tech-tag">Full HD</span>
+        </div>
+
+        <div class="platform-linear-card">
+          <div class="platform-left">
+            <div class="platform-icon-circle">✖️</div>
+            <div>
+              <div class="platform-title-main">Twitter / X</div>
+              <div class="platform-sub-cap">HD Video • Audio</div>
+            </div>
+          </div>
+          <span class="tech-tag">Fast</span>
+        </div>
+
+        <div class="platform-linear-card">
+          <div class="platform-left">
+            <div class="platform-icon-circle">🔵</div>
+            <div>
+              <div class="platform-title-main">VKontakte</div>
+              <div class="platform-sub-cap">Clips • Video • Audio</div>
+            </div>
+          </div>
+          <span class="tech-tag">1080p</span>
+        </div>
+
+        <div class="platform-linear-card">
+          <div class="platform-left">
+            <div class="platform-icon-circle">📌</div>
+            <div>
+              <div class="platform-title-main">Pinterest</div>
+              <div class="platform-sub-cap">Video Pins • High-Res</div>
+            </div>
+          </div>
+          <span class="tech-tag">Original</span>
+        </div>
+
+        <div class="platform-linear-card">
+          <div class="platform-left">
+            <div class="platform-icon-circle">☁️</div>
+            <div>
+              <div class="platform-title-main">SoundCloud</div>
+              <div class="platform-sub-cap">HQ Audio • 320 kbps</div>
+            </div>
+          </div>
+          <span class="tech-tag amber">Audio</span>
+        </div>
+
+        <div class="platform-linear-card">
+          <div class="platform-left">
+            <div class="platform-icon-circle">💾</div>
+            <div>
+              <div class="platform-title-main">Cloud Vault</div>
+              <div class="platform-sub-cap">Pixeldrain (20GB)</div>
+            </div>
+          </div>
+          <span class="tech-tag blue">20 GB</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 1700+ Platforms Matrix -->
-  <section class="platforms-section" id="platforms">
+  <!-- Pricing / Tiers -->
+  <section class="tiers-section" id="tariffs">
     <div class="container">
-      <div class="section-header">
-        <div class="cyber-badge" data-i18n="platforms.badge">ЭКОСИСТЕМА ПОДДЕРЖКИ</div>
-        <h2 class="section-title" data-i18n="platforms.title">Работает с любой ссылкой, которую вы скинете</h2>
-        <p class="section-subtitle" data-i18n="platforms.subtitle">
-          От мировых видеогигантов до нишевых аудио-платформ — если у контента есть URL, Toolbox его скачает.
+      <div class="section-header-linear">
+        <span class="section-label-linear" data-i18n="tiers.badge">ПРОЗРАЧНЫЕ УСЛОВИЯ</span>
+        <h2 class="section-title-linear" data-i18n="tiers.title">Тарифные планы</h2>
+        <p class="section-desc-linear" data-i18n="tiers.desc">
+          Базовые возможности доступны каждому пользователю бесплатно каждый день.
         </p>
       </div>
 
-      <div class="platform-controls">
-        <div class="platform-tabs">
-          <button class="platform-tab active" data-filter="all" data-i18n="platforms.filter_all">Все платформы</button>
-          <button class="platform-tab" data-filter="social" data-i18n="platforms.filter_social">Соцсети и Reels</button>
-          <button class="platform-tab" data-filter="video" data-i18n="platforms.filter_video">Видеохостинги</button>
-          <button class="platform-tab" data-filter="music" data-i18n="platforms.filter_music">Музыка и Аудио</button>
-          <button class="platform-tab" data-filter="cloud" data-i18n="platforms.filter_cloud">Облака и Файлы</button>
-        </div>
-
-        <div class="platform-search-wrapper">
-          <input type="text" id="platform-search" class="platform-search-input" placeholder="Поиск среди 1700+ сайтов..." data-i18n-attr="placeholder:platforms.search_placeholder">
-        </div>
-      </div>
-
-      <div class="platform-grid">
-        <!-- YouTube -->
-        <div class="platform-card" data-name="YouTube" data-category="video" data-tags="4k 8k mp3 subtitle hdr">
-          <div class="platform-info">
-            <div class="platform-logo" style="color: #ff0000;">▶️</div>
-            <div>
-              <div class="platform-name">YouTube</div>
-              <div class="platform-cap">Up to 8K • 60fps • MP3</div>
-            </div>
+      <div class="tiers-grid">
+        <!-- Free Tier -->
+        <div class="tier-card">
+          <div class="tier-header">
+            <h3 class="tier-name" data-i18n="tiers.free_title">Free Plan</h3>
+            <p class="tier-desc" data-i18n="tiers.free_desc">Для регулярных повседневных задач</p>
           </div>
-          <span class="platform-verified" data-i18n="platforms.verified_badge">ПРОВЕРЕНО</span>
-        </div>
-
-        <!-- TikTok -->
-        <div class="platform-card" data-name="TikTok" data-category="social" data-tags="watermark slides audio photo">
-          <div class="platform-info">
-            <div class="platform-logo" style="color: #00f5d4;">🎵</div>
-            <div>
-              <div class="platform-name">TikTok</div>
-              <div class="platform-cap">No Watermark • Slides</div>
-            </div>
-          </div>
-          <span class="platform-verified" data-i18n="platforms.verified_badge">ПРОВЕРЕНО</span>
-        </div>
-
-        <!-- Instagram -->
-        <div class="platform-card" data-name="Instagram" data-category="social" data-tags="reels stories posts photos audio">
-          <div class="platform-info">
-            <div class="platform-logo" style="color: #ff007a;">📸</div>
-            <div>
-              <div class="platform-name">Instagram</div>
-              <div class="platform-cap">Reels • Stories • Posts</div>
-            </div>
-          </div>
-          <span class="platform-verified" data-i18n="platforms.verified_badge">ПРОВЕРЕНО</span>
-        </div>
-
-        <!-- Twitter / X -->
-        <div class="platform-card" data-name="Twitter X" data-category="social" data-tags="x twitter video gif stream">
-          <div class="platform-info">
-            <div class="platform-logo" style="color: #ffffff;">✖️</div>
-            <div>
-              <div class="platform-name">Twitter / X</div>
-              <div class="platform-cap">HD Video • GIFs • Audio</div>
-            </div>
-          </div>
-          <span class="platform-verified" data-i18n="platforms.verified_badge">ПРОВЕРЕНО</span>
-        </div>
-
-        <!-- VKontakte -->
-        <div class="platform-card" data-name="VKontakte" data-category="video" data-tags="vk clips video music">
-          <div class="platform-info">
-            <div class="platform-logo" style="color: #0077ff;">🔵</div>
-            <div>
-              <div class="platform-name">VKontakte</div>
-              <div class="platform-cap">Clips • 1080p • Music</div>
-            </div>
-          </div>
-          <span class="platform-verified" data-i18n="platforms.verified_badge">ПРОВЕРЕНО</span>
-        </div>
-
-        <!-- Pinterest -->
-        <div class="platform-card" data-name="Pinterest" data-category="social" data-tags="pins video photos highres">
-          <div class="platform-info">
-            <div class="platform-logo" style="color: #e60023;">📌</div>
-            <div>
-              <div class="platform-name">Pinterest</div>
-              <div class="platform-cap">Video Pins • High-Res</div>
-            </div>
-          </div>
-          <span class="platform-verified" data-i18n="platforms.verified_badge">ПРОВЕРЕНО</span>
-        </div>
-
-        <!-- Soundcloud -->
-        <div class="platform-card" data-name="SoundCloud" data-category="music" data-tags="audio flac 320kbps music">
-          <div class="platform-info">
-            <div class="platform-logo" style="color: #ff5500;">☁️</div>
-            <div>
-              <div class="platform-name">SoundCloud</div>
-              <div class="platform-cap">HQ Audio • 320 kbps</div>
-            </div>
-          </div>
-          <span class="platform-verified" data-i18n="platforms.verified_badge">ПРОВЕРЕНО</span>
-        </div>
-
-        <!-- Pixeldrain / Litterbox -->
-        <div class="platform-card" data-name="Pixeldrain Cloud" data-category="cloud" data-tags="cloud storage 20gb litterbox">
-          <div class="platform-info">
-            <div class="platform-logo" style="color: #ffb703;">💾</div>
-            <div>
-              <div class="platform-name">Cloud Storage</div>
-              <div class="platform-cap">Up to 20 GB • Direct Links</div>
-            </div>
-          </div>
-          <span class="platform-verified" data-i18n="platforms.verified_badge">ПРОВЕРЕНО</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- News / Updates & Blog Section -->
-  <section class="news-section" id="news">
-    <div class="container">
-      <div class="section-header">
-        <div class="cyber-badge" data-i18n="news.badge">БЛОГ И ОБНОВЛЕНИЯ</div>
-        <h2 class="section-title" data-i18n="news.title">Свежие релизы и возможности</h2>
-        <p class="section-subtitle" data-i18n="news.subtitle">
-          Следите за добавлением новых экстракторов, нейросетевых моделей и оптимизацией скорости.
-        </p>
-      </div>
-
-      <div class="news-grid">
-        <!-- Post 1 -->
-        <div class="news-card reveal-on-scroll reveal-delay-1">
-          <div>
-            <div class="news-meta">
-              <span class="news-tag" data-i18n="news.post1_tag">Крупный релиз</span>
-              <span class="news-date" data-i18n="news.post1_date">Август 2026</span>
-            </div>
-            <h3 class="news-title" data-i18n="news.post1_title">Toolbox v0.50 — 8K Ultra и Whisper Pro</h3>
-            <p class="news-desc" data-i18n="news.post1_desc">
-              Обновлен видео-пайплайн для потоков 8K 60fps, внедрена нейросетевая транскрибация Groq Whisper и ускорена обработка параллельной очереди.
-            </p>
-          </div>
-          <div class="news-footer">
-            <a href="https://t.me/Toolbox_Bot" target="_blank" class="news-link">
-              <span data-i18n="news.btn_read_more">Подробнее в Telegram →</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Post 2 -->
-        <div class="news-card reveal-on-scroll reveal-delay-2">
-          <div>
-            <div class="news-meta">
-              <span class="news-tag" data-i18n="news.post2_tag">Функция</span>
-              <span class="news-date" data-i18n="news.post2_date">Август 2026</span>
-            </div>
-            <h3 class="news-title" data-i18n="news.post2_title">Слайдшоу TikTok: фото + аудиодорожка</h3>
-            <p class="news-desc" data-i18n="news.post2_desc">
-              Теперь бот умеет в один клик доставать все кадры из фото-слайдов TikTok в оригинальном разрешении и прикреплять оригинальный саундтрек.
-            </p>
-          </div>
-          <div class="news-footer">
-            <a href="https://t.me/Toolbox_Bot" target="_blank" class="news-link">
-              <span data-i18n="news.btn_read_more">Подробнее в Telegram →</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Post 3 -->
-        <div class="news-card reveal-on-scroll reveal-delay-3">
-          <div>
-            <div class="news-meta">
-              <span class="news-tag" data-i18n="news.post3_tag">Инфраструктура</span>
-              <span class="news-date" data-i18n="news.post3_date">Июль 2026</span>
-            </div>
-            <h3 class="news-title" data-i18n="news.post3_title">Облачная загрузка до 20 ГБ через Pixeldrain</h3>
-            <p class="news-desc" data-i18n="news.post3_desc">
-              Снято ограничение Telegram в 20 МБ благодаря автоматическому пайплайну выгрузки тяжелых медиафайлов в облако для PRO пользователей.
-            </p>
-          </div>
-          <div class="news-footer">
-            <a href="https://t.me/Toolbox_Bot" target="_blank" class="news-link">
-              <span data-i18n="news.btn_read_more">Подробнее в Telegram →</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="cyber-badge" data-i18n="faq.badge">ЧАСТЫЕ ВОПРОСЫ</div>
-        <h2 class="section-title" data-i18n="faq.title">Всё, что нужно знать о Toolbox</h2>
-        <p class="section-subtitle" data-i18n="faq.subtitle">
-          Ответы на популярные вопросы о безопасности, лимитах и подписке PRO.
-        </p>
-      </div>
-
-      <div class="faq-list">
-        <!-- FAQ 1 -->
-        <div class="faq-item open">
-          <div class="faq-question">
-            <h4 data-i18n="faq.q1">Бот бесплатный?</h4>
-            <span class="faq-chevron">▼</span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq.a1">
-              Да! В бесплатном тарифе доступно 5 действий в сутки с качеством видео до 1080p, извлечением аудио, конвертацией и QR-кодами. Для активных пользователей, которым нужны 4K/8K, безлимитная ИИ-транскрибация и файлы до 20 ГБ, доступен Toolbox PRO.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item">
-          <div class="faq-question">
-            <h4 data-i18n="faq.q2">Как начать пользоваться ботом?</h4>
-            <span class="faq-chevron">▼</span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq.a2">
-              Просто нажмите кнопку «Запустить бота», откройте @Toolbox_Bot в Telegram, нажмите Start и отправьте любую ссылку, файл или голосовое. Бот мгновенно выдаст список действий.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item">
-          <div class="faq-question">
-            <h4 data-i18n="faq.q3">Безопасны ли мои личные файлы?</h4>
-            <span class="faq-chevron">▼</span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq.a3">
-              Абсолютно. Вся обработка происходит во временных изолированных контейнерах, и файлы безвозвратно удаляются с сервера сразу после отправки вам.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item">
-          <div class="faq-question">
-            <h4 data-i18n="faq.q4">Можно ли скачивать видео из TikTok без водяных знаков?</h4>
-            <span class="faq-chevron">▼</span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq.a4">
-              Да! Toolbox автоматически срезает логотипы TikTok и позволяет получить чистое видео в максимальном битрейте, либо только звуковую дорожку.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="faq-item">
-          <div class="faq-question">
-            <h4 data-i18n="faq.q5">Какие языки поддерживаются?</h4>
-            <span class="faq-chevron">▼</span>
-          </div>
-          <div class="faq-answer">
-            <p data-i18n="faq.a5">
-              Интерфейс бота переведен на 10 языков (русский, английский, украинский, немецкий, испанский, итальянский, португальский, индонезийский, вьетнамский, персидский), а транскрибация Whisper AI распознает более 100 языков.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Big CTA Banner Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-banner reveal-on-scroll">
-        <h2 class="cta-banner-title" data-i18n="cta.title">Готовы прокачать свой Telegram?</h2>
-        <p class="cta-banner-subtitle" data-i18n="cta.subtitle">
-          Присоединяйтесь к тысячам создателей контента, разработчиков и обычных пользователей, которые экономят часы каждую неделю с Toolbox.
-        </p>
-        <a href="https://t.me/Toolbox_Bot" target="_blank" class="btn btn-primary btn-glow-tg" style="font-size: 1.1rem; padding: 1.1rem 2.4rem;" data-i18n="cta.btn_main">
-          Начать использовать Toolbox в Telegram 🚀
-        </a>
-        <div class="cta-guarantee" data-i18n="cta.guarantee">
-          Бесплатный старт • Без рекламы • Моментальный запуск
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <a href="#" class="brand-logo">
-            <div class="brand-icon-box">🧰</div>
-            <span>Toolbox</span>
+          <ul class="tier-features-list">
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f1">5 действий каждые сутки</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f2">Скачивание видео до 1080p Full HD</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f3">Извлечение аудио MP3 и обложек</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f4">Конвертация форматов и сжатие</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f5">Генерация QR-кодов и хеширование</span></li>
+          </ul>
+          <a href="https://t.me/Toolbox_Bot" target="_blank" class="btn-linear btn-linear-secondary" style="width: 100%;">
+            Начать бесплатно
           </a>
-          <p class="footer-brand-desc" data-i18n="footer.brand_desc">
-            Универсальный высокопроизводительный медиа-комбайн для Telegram. Скачивание, транскрибация, конвертация и сжатие на лету.
-          </p>
         </div>
 
-        <div>
-          <h5 class="footer-column-title" data-i18n="footer.section_links">Навигация</h5>
-          <ul class="footer-links">
-            <li><a href="#features" data-i18n="nav.features">Возможности</a></li>
-            <li><a href="#simulator" data-i18n="nav.simulator">Демонстрация</a></li>
-            <li><a href="#platforms" data-i18n="nav.platforms">1700+ сайтов</a></li>
-            <li><a href="#compression" data-i18n="nav.compressor">Сжатие</a></li>
-            <li><a href="#news" data-i18n="nav.news">Новости</a></li>
+        <!-- PRO Tier -->
+        <div class="tier-card pro-card">
+          <div class="tier-header">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <h3 class="tier-name" data-i18n="tiers.pro_title">Toolbox PRO</h3>
+              <span class="tech-tag blue">UNLIMITED</span>
+            </div>
+            <p class="tier-desc" data-i18n="tiers.pro_desc">Для активных пользователей и контент-мейкеров</p>
+          </div>
+          <ul class="tier-features-list">
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f1">Безлимитная очередь задач</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f2">Скачивание в честном 4K и 8K качестве</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f3">Безлимитная Whisper AI транскрибация</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f4">Облачная выгрузка файлов до 20 ГБ</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f5">Приоритетные вычислительные воркеры</span></li>
           </ul>
-        </div>
-
-        <div>
-          <h5 class="footer-column-title" data-i18n="footer.section_features">Инструменты</h5>
-          <ul class="footer-links">
-            <li><a href="#features">8K Загрузчик</a></li>
-            <li><a href="#transcription">Whisper AI Транскрипция</a></li>
-            <li><a href="#compression">Lossless Сжатие</a></li>
-            <li><a href="#features">Конвертер форматов</a></li>
-            <li><a href="#features">Cloud Vault 20GB</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h5 class="footer-column-title" data-i18n="footer.section_social">Сообщество</h5>
-          <ul class="footer-links">
-            <li><a href="https://t.me/Toolbox_Bot" target="_blank" data-i18n="footer.bot_link">Telegram Бот</a></li>
-            <li><a href="https://github.com/ViacheslavChernyshov/Toolbox" target="_blank" data-i18n="footer.github_link">GitHub Репозиторий</a></li>
-            <li><a href="https://t.me/" target="_blank" data-i18n="footer.channel_link">Канал обновлений</a></li>
-          </ul>
+          <a href="https://t.me/Toolbox_Bot" target="_blank" class="btn-linear btn-linear-brand" style="width: 100%;">
+            Подключить в боте (/buy)
+          </a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="footer-bottom">
-        <div data-i18n="footer.rights">© 2026 Toolbox. Создано для скорости и удобства.</div>
-        <div data-i18n="footer.license">Распространяется по лицензии MIT.</div>
+  <!-- FAQ Accordion -->
+  <section class="faq-linear-section" id="faq">
+    <div class="container">
+      <div class="section-header-linear">
+        <span class="section-label-linear" data-i18n="faq.badge">ВОПРОСЫ И ОТВЕТЫ</span>
+        <h2 class="section-title-linear" data-i18n="faq.title">Часто задаваемые вопросы</h2>
+        <p class="section-desc-linear" data-i18n="faq.desc">
+          Технические детали, вопросы безопасности и специфика работы сервиса.
+        </p>
       </div>
+
+      <div class="faq-linear-list">
+        <div class="faq-linear-item open">
+          <div class="faq-linear-trigger">
+            <span data-i18n="faq.q1">Как бот обрабатывает мои файлы и ссылки?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-linear-body">
+            <p data-i18n="faq.a1">
+              Бот принимает контент через официальный Telegram Bot API, изолированно обрабатывает его во временных рабочих контейнерах (FFmpeg, yt-dlp, Whisper) и сразу после отправки результата вам безвозвратно удаляет временные файлы из памяти и диска.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-linear-item">
+          <div class="faq-linear-trigger">
+            <span data-i18n="faq.q2">Как скачать видео без водяного знака из TikTok?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-linear-body">
+            <p data-i18n="faq.a2">
+              Просто скопируйте ссылку на ролик или фото-слайдшоу в приложении TikTok и отправьте её боту. Toolbox автоматически отфильтрует метаданные и пришлёт чистый ролик в оригинальном битрейте.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-linear-item">
+          <div class="faq-linear-trigger">
+            <span data-i18n="faq.q3">Что делать, если файл превышает лимит отправки Telegram?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-linear-body">
+            <p data-i18n="faq.a3">
+              Для файлов больше стандартного лимита бот автоматически генерирует прямую скоростную ссылку на защищенное облачное хранилище Pixeldrain или Litterbox, откуда файл можно скачать в один клик.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-linear-item">
+          <div class="faq-linear-trigger">
+            <span data-i18n="faq.q4">На каких языках работает транскрибация речи?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-linear-body">
+            <p data-i18n="faq.a4">
+              Транскрибация на базе нейросети Whisper распознает речь более чем на 100 языках мира, автоматически расставляет пунктуацию и формирует удобные абзацы.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Linear CTA Banner -->
+  <section class="cta-linear-section">
+    <div class="container">
+      <div class="cta-linear-box">
+        <h2 class="section-title-linear" style="font-size: 2.2rem; margin-bottom: 0.8rem;" data-i18n="cta.title">
+          Начните использовать Toolbox в Telegram
+        </h2>
+        <p class="section-desc-linear" style="margin: 0 auto 2rem auto;" data-i18n="cta.desc">
+          Никаких регистраций, установок тяжелых программ или сомнительных сайтов. Просто откройте диалог с ботом.
+        </p>
+        <a href="https://t.me/Toolbox_Bot" target="_blank" class="btn-linear btn-linear-brand" style="font-size: 1rem; padding: 0.8rem 2rem;" data-i18n="cta.btn">
+          Открыть диалог с @Toolbox_Bot 🚀
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linear Footer -->
+  <footer class="linear-footer">
+    <div class="container footer-inner-linear">
+      <div>
+        <span data-i18n="footer.rights">© 2026 ToolboxBot. Профессиональный медиа-инструментарий для Telegram.</span>
+        <span style="margin-left: 8px; color: var(--text-dim);">•</span>
+        <span style="margin-left: 8px;" data-i18n="footer.license">Лицензия MIT. Открытый исходный код.</span>
+      </div>
+
+      <ul class="footer-nav-linear">
+        <li><a href="https://github.com/ViacheslavChernyshov/Toolbox" target="_blank" data-i18n="footer.github">GitHub</a></li>
+        <li><a href="https://t.me/Toolbox_Bot" target="_blank" data-i18n="footer.bot">Telegram Бот</a></li>
+      </ul>
     </div>
   </footer>
 
@@ -777,8 +765,6 @@
 
   <!-- 2. Core Modules -->
   <script src="js/i18n.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/simulator.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

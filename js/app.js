@@ -1,5 +1,5 @@
 /**
- * Toolbox Web — Main Application Script
+ * Toolbox Web — Linear Application Script
  */
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Initialize i18n
@@ -7,17 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.ToolboxI18n.init();
   }
 
-  // 2. Initialize Visual Animations & Interactive Canvas
-  if (window.ToolboxAnimations) {
-    window.ToolboxAnimations.init();
-  }
-
-  // 3. Initialize Interactive Simulator Terminal
-  if (window.ToolboxSimulator) {
-    window.ToolboxSimulator.init();
-  }
-
-  // 4. Header & Language Dropdown Toggle
+  // 2. Language Dropdown Toggle
   const langToggleBtn = document.querySelector("#lang-toggle-btn");
   const langDropdown = document.querySelector(".lang-dropdown");
 
@@ -40,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 5. Mobile Navigation Menu Toggle
+  // 3. Mobile Navigation Menu Toggle
   const mobileMenuBtn = document.querySelector("#mobile-menu-btn");
   const navLinks = document.querySelector("#nav-menu");
 
@@ -50,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileMenuBtn.classList.toggle("active");
     });
 
-    document.querySelectorAll(".nav-link").forEach((link) => {
+    document.querySelectorAll(".linear-nav-link").forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");
         mobileMenuBtn.classList.remove("active");
@@ -58,13 +48,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 6. Header Scrolled State
-  const header = document.querySelector(".site-header");
+  // 4. Header Scrolled State
+  const header = document.querySelector(".linear-header");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 20) {
       header.classList.add("scrolled");
     } else {
       header.classList.remove("scrolled");
+    }
+  });
+
+  // 5. Interactive Action Matrix Tabs
+  const matrixTabs = document.querySelectorAll(".matrix-tab-btn");
+  const matrixPanes = document.querySelectorAll(".matrix-content-pane");
+
+  matrixTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const targetTab = tab.getAttribute("data-tab");
+      matrixTabs.forEach((t) => t.classList.remove("active"));
+      matrixPanes.forEach((p) => p.classList.remove("active"));
+
+      tab.classList.add("active");
+      const activePane = document.querySelector(`#pane-${targetTab}`);
+      if (activePane) activePane.classList.add("active");
+    });
+  });
+
+  // 6. FAQ Accordions
+  const faqItems = document.querySelectorAll(".faq-linear-item");
+  faqItems.forEach((item) => {
+    const trigger = item.querySelector(".faq-linear-trigger");
+    if (trigger) {
+      trigger.addEventListener("click", () => {
+        const isOpen = item.classList.contains("open");
+        faqItems.forEach((i) => i.classList.remove("open"));
+        if (!isOpen) {
+          item.classList.add("open");
+        }
+      });
     }
   });
 
@@ -76,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetEl = document.querySelector(targetId);
       if (targetEl) {
         e.preventDefault();
-        const headerOffset = 80;
+        const headerOffset = 70;
         const elementPosition = targetEl.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -87,13 +108,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  // 8. Live Telemetry Update Simulation
-  setInterval(() => {
-    const latSpan = document.querySelector("#telemetry-latency-val");
-    if (latSpan) {
-      const ms = Math.floor(Math.random() * 8) + 38;
-      latSpan.textContent = `${ms}ms`;
-    }
-  }, 4000);
 });
