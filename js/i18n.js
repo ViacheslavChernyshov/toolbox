@@ -55,9 +55,14 @@
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      const translation = getNestedTranslation(locale, key);
+      let translation = getNestedTranslation(locale, key);
+      if (translation === null && window.TOOLBOX_LOCALES.en) {
+        translation = getNestedTranslation(window.TOOLBOX_LOCALES.en, key);
+      }
+      if (translation === null && window.TOOLBOX_LOCALES.ru) {
+        translation = getNestedTranslation(window.TOOLBOX_LOCALES.ru, key);
+      }
       if (translation !== null) {
-        // If element has children with non-i18n tags, check if it's pure text or HTML
         if (el.dataset.i18nHtml === "true") {
           el.innerHTML = translation;
         } else {
@@ -70,12 +75,14 @@
     const attrElements = document.querySelectorAll("[data-i18n-attr]");
     attrElements.forEach((el) => {
       const raw = el.getAttribute("data-i18n-attr");
-      // Format: "placeholder:simulator.input_placeholder;title:hero.badge"
       const pairs = raw.split(";");
       pairs.forEach((pair) => {
         const [attr, key] = pair.split(":");
         if (attr && key) {
-          const val = getNestedTranslation(locale, key.trim());
+          let val = getNestedTranslation(locale, key.trim());
+          if (val === null && window.TOOLBOX_LOCALES.en) {
+            val = getNestedTranslation(window.TOOLBOX_LOCALES.en, key.trim());
+          }
           if (val !== null) {
             el.setAttribute(attr.trim(), val);
           }
