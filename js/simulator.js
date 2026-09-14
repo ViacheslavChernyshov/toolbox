@@ -256,7 +256,7 @@
             </div>
 
             <div class="sim-telegram-cta">
-              <a href="https://t.me/Toolbox_Bot" target="_blank" class="sim-tg-btn">
+              <a href="${typeof window.ToolboxGetBotUrl === 'function' ? window.ToolboxGetBotUrl('w_sim') : 'https://t.me/Toolbox_Bot?start=w_sim'}" target="_blank" class="sim-tg-btn" data-placement="w_sim">
                 <span>🚀 Execute in Telegram Bot</span>
                 <span class="tg-arrow">→</span>
               </a>

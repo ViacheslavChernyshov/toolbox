@@ -262,4 +262,55 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // 11. Dynamic Traffic & Deep Link Tracker
+  function initTrafficTracker() {
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const utmSource = urlParams.get("utm_source");
+      const utmCampaign = urlParams.get("utm_campaign") || urlParams.get("utm_medium");
+      
+      if (utmSource) {
+        sessionStorage.setItem("tb_utm_source", utmSource);
+        if (utmCampaign) sessionStorage.setItem("tb_utm_campaign", utmCampaign);
+      }
+
+      const updateBotLinks = () => {
+        const savedSource = sessionStorage.getItem("tb_utm_source");
+        const savedCampaign = sessionStorage.getItem("tb_utm_campaign");
+
+        document.querySelectorAll("a[href*='t.me/']").forEach((link) => {
+          const placement = link.getAttribute("data-placement") || "w_web";
+          if (savedSource) {
+            const cleanSrc = savedSource.replace(/[^a-zA-Z0-9]/g, "").slice(0, 16);
+            const cleanCmp = (savedCampaign || placement).replace(/[^a-zA-Z0-9]/g, "").slice(0, 24);
+            const base = link.href.split("?")[0];
+            link.href = `${base}?start=u_${cleanSrc}_${cleanCmp}`;
+          } else if (!link.href.includes("?start=")) {
+            const base = link.href.split("?")[0];
+            const p = placement.startsWith("w_") ? placement : `w_${placement}`;
+            link.href = `${base}?start=${p}`;
+          }
+        });
+      };
+
+      updateBotLinks();
+
+      window.ToolboxGetBotUrl = function (placement) {
+        const savedSource = sessionStorage.getItem("tb_utm_source");
+        const savedCampaign = sessionStorage.getItem("tb_utm_campaign");
+        if (savedSource) {
+          const cleanSrc = savedSource.replace(/[^a-zA-Z0-9]/g, "").slice(0, 16);
+          const cleanCmp = (savedCampaign || placement || "web").replace(/[^a-zA-Z0-9]/g, "").slice(0, 24);
+          return `https://t.me/Toolbox_Bot?start=u_${cleanSrc}_${cleanCmp}`;
+        }
+        const p = placement ? (placement.startsWith("w_") ? placement : `w_${placement}`) : "w_web";
+        return `https://t.me/Toolbox_Bot?start=${p}`;
+      };
+    } catch (e) {
+      console.warn("Traffic tracker init skipped:", e);
+    }
+  }
+
+  initTrafficTracker();
 });
