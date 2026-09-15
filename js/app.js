@@ -302,10 +302,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (savedSource) {
           const cleanSrc = savedSource.replace(/[^a-zA-Z0-9]/g, "").slice(0, 16);
           const cleanCmp = (savedCampaign || placement || "web").replace(/[^a-zA-Z0-9]/g, "").slice(0, 24);
-          return `https://t.me/Toolbox_Bot?start=u_${cleanSrc}_${cleanCmp}`;
+          return `https://t.me/ToolBoxMultiBot?start=u_${cleanSrc}_${cleanCmp}`;
         }
         const p = placement ? (placement.startsWith("w_") ? placement : `w_${placement}`) : "w_web";
-        return `https://t.me/Toolbox_Bot?start=${p}`;
+        return `https://t.me/ToolBoxMultiBot?start=${p}`;
       };
     } catch (e) {
       console.warn("Traffic tracker init skipped:", e);

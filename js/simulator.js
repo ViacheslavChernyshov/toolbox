@@ -256,7 +256,7 @@
             </div>
 
             <div class="sim-telegram-cta">
-              <a href="${typeof window.ToolboxGetBotUrl === 'function' ? window.ToolboxGetBotUrl('w_sim') : 'https://t.me/Toolbox_Bot?start=w_sim'}" target="_blank" class="sim-tg-btn" data-placement="w_sim">
+              <a href="${typeof window.ToolboxGetBotUrl === 'function' ? window.ToolboxGetBotUrl('w_sim') : 'https://t.me/ToolBoxMultiBot?start=w_sim'}" target="_blank" class="sim-tg-btn" data-placement="w_sim">
                 <span>🚀 Execute in Telegram Bot</span>
                 <span class="tg-arrow">→</span>
               </a>
@@ -271,7 +271,7 @@
   function handleActionClick(actionName) {
     const toast = document.createElement("div");
     toast.className = "cyber-toast";
-    toast.innerHTML = `<span>⚡ Action selected: <strong>${actionName}</strong></span><br><small>Redirecting to @Toolbox_Bot in Telegram...</small>`;
+    toast.innerHTML = `<span>⚡ Action selected: <strong>${actionName}</strong></span><br><small>Redirecting to @ToolBoxMultiBot in Telegram...</small>`;
     document.body.appendChild(toast);
     setTimeout(() => toast.classList.add("visible"), 10);
     setTimeout(() => {

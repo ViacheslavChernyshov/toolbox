@@ -13,13 +13,13 @@ window.TOOLBOX_LOCALES.vi = {
     "compression": "Compression",
     "tariffs": "Bảng Giá",
     "faq": "FAQ",
-    "open_bot": "Mở @Toolbox_Bot ↗"
+    "open_bot": "Mở @ToolBoxMultiBot ↗"
   },
   "hero": {
     "badge": "Trợ Lý Đa Phương Tiện & Tự Động Hóa AI Cho Telegram",
     "headline_p1": "Một bot duy nhất để tải xuống, chuyển văn bản,",
     "headline_highlight": "chuyển đổi và nén tệp tin.",
-    "subheadline": "Gửi bất kỳ liên kết, video, tin nhắn thoại hoặc tài liệu nào tới @Toolbox_Bot. Bot sẽ tự động nhận diện định dạng và cung cấp các thao tác chuẩn xác ngay trong Telegram mà không có quảng cáo.",
+    "subheadline": "Gửi bất kỳ liên kết, video, tin nhắn thoại hoặc tài liệu nào tới @ToolBoxMultiBot. Bot sẽ tự động nhận diện định dạng và cung cấp các thao tác chuẩn xác ngay trong Telegram mà không có quảng cáo.",
     "trust_badge1": "⚡ 0s Instant Start",
     "trust_badge2": "🛡️ Zero Ads & Spam",
     "trust_badge3": "🔒 100% Private",
@@ -179,7 +179,7 @@ window.TOOLBOX_LOCALES.vi = {
     "q1": "Bot xử lý tệp và liên kết của tôi như thế nào?",
     "a1": "Bot nhận tệp qua API Telegram chính thức, xử lý trong môi trường độc lập tạm thời (FFmpeg, yt-dlp, Whisper) và xóa sạch toàn bộ tệp khỏi máy chủ ngay sau khi gửi lại cho bạn.",
     "q2": "Làm thế nào để tải video TikTok không dính logo?",
-    "a2": "Chỉ cần sao chép liên kết video hoặc album ảnh TikTok rồi gửi cho @Toolbox_Bot. Bot sẽ tự động lọc bỏ logo và gửi lại video sạch với chất lượng cao nhất.",
+    "a2": "Chỉ cần sao chép liên kết video hoặc album ảnh TikTok rồi gửi cho @ToolBoxMultiBot. Bot sẽ tự động lọc bỏ logo và gửi lại video sạch với chất lượng cao nhất.",
     "q3": "Điều gì xảy ra nếu tệp vượt quá dung lượng Telegram cho phép?",
     "a3": "Với tệp có dung lượng lớn, bot sẽ tự động tải lên dịch vụ lưu trữ đám mây tốc độ cao (Pixeldrain / Litterbox) và cung cấp liên kết tải trực tiếp.",
     "q4": "Tính năng nhận diện giọng nói hỗ trợ những ngôn ngữ nào?",
@@ -192,7 +192,7 @@ window.TOOLBOX_LOCALES.vi = {
   "cta": {
     "title": "Bắt đầu sử dụng Toolbox trên Telegram",
     "desc": "Không cần đăng ký, không cần cài đặt phần mềm nặng hay truy cập trang web lạ. Chỉ cần mở tin nhắn với bot.",
-    "btn": "Mở đoạn chat với @Toolbox_Bot 🚀"
+    "btn": "Mở đoạn chat với @ToolBoxMultiBot 🚀"
   },
   "footer": {
     "rights": "© 2026 ToolboxBot. Trợ lý tự động hóa phương tiện chuyên nghiệp cho Telegram.",

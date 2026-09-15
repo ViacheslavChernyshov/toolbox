@@ -13,13 +13,13 @@ window.TOOLBOX_LOCALES.de = {
     "compression": "Compression",
     "tariffs": "Tarife",
     "faq": "FAQ",
-    "open_bot": "Öffnen @Toolbox_Bot ↗"
+    "open_bot": "Öffnen @ToolBoxMultiBot ↗"
   },
   "hero": {
     "badge": "Telegram Medienassistent & KI-Automatisierung",
     "headline_p1": "Ein Bot zum Herunterladen, Transkribieren,",
     "headline_highlight": "Konvertieren und Komprimieren.",
-    "subheadline": "Senden Sie einen Link, ein Video, eine Sprachnachricht oder ein Dokument an @Toolbox_Bot. Der Bot erkennt das Format automatisch und bietet Aktionen direkt in Telegram ohne Werbung.",
+    "subheadline": "Senden Sie einen Link, ein Video, eine Sprachnachricht oder ein Dokument an @ToolBoxMultiBot. Der Bot erkennt das Format automatisch und bietet Aktionen direkt in Telegram ohne Werbung.",
     "trust_badge1": "⚡ 0s Instant Start",
     "trust_badge2": "🛡️ Zero Ads & Spam",
     "trust_badge3": "🔒 100% Private",
@@ -179,7 +179,7 @@ window.TOOLBOX_LOCALES.de = {
     "q1": "Wie verarbeitet der Bot meine Dateien und Links?",
     "a1": "Der Bot empfängt Inhalte über die offizielle Telegram Bot API, verarbeitet sie isoliert in temporären Workern (FFmpeg, yt-dlp, Whisper) und löscht alle Zwischendateien sofort nach der Zustellung.",
     "q2": "Wie lade ich TikTok-Videos ohne Wasserzeichen herunter?",
-    "a2": "Senden Sie einfach den Link des TikTok-Videos oder der Diashow an @Toolbox_Bot. Der Bot entfernt automatisch alle Wasserzeichen und liefert das saubere Video in Originalqualität.",
+    "a2": "Senden Sie einfach den Link des TikTok-Videos oder der Diashow an @ToolBoxMultiBot. Der Bot entfernt automatisch alle Wasserzeichen und liefert das saubere Video in Originalqualität.",
     "q3": "Was passiert, wenn eine Datei das Telegram-Limit überschreitet?",
     "a3": "Bei Dateien über dem Standardlimit generiert der Bot automatisch einen direkten Download-Link zu geschütztem Cloud-Speicher (Pixeldrain / Litterbox).",
     "q4": "Welche Sprachen werden für die Sprachtranskription unterstützt?",
@@ -192,7 +192,7 @@ window.TOOLBOX_LOCALES.de = {
   "cta": {
     "title": "Starten Sie jetzt mit Toolbox in Telegram",
     "desc": "Keine Registrierungen, keine schweren Apps, keine dubiosen Webseiten. Öffnen Sie einfach den Chat.",
-    "btn": "Dialog mit @Toolbox_Bot öffnen 🚀"
+    "btn": "Dialog mit @ToolBoxMultiBot öffnen 🚀"
   },
   "footer": {
     "rights": "© 2026 ToolboxBot. Professioneller Medienassistent für Telegram.",

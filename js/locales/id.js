@@ -13,13 +13,13 @@ window.TOOLBOX_LOCALES.id = {
     "compression": "Compression",
     "tariffs": "Paket",
     "faq": "FAQ",
-    "open_bot": "Buka @Toolbox_Bot ↗"
+    "open_bot": "Buka @ToolBoxMultiBot ↗"
   },
   "hero": {
     "badge": "Asisten Media & Otomasi AI untuk Telegram",
     "headline_p1": "Satu bot untuk mengunduh, transkripsi,",
     "headline_highlight": "konversi, dan kompresi media.",
-    "subheadline": "Kirim tautan, video, pesan suara, atau dokumen apa pun ke @Toolbox_Bot. Bot secara otomatis mendeteksi format dan menyediakan tindakan presisi langsung di Telegram tanpa iklan.",
+    "subheadline": "Kirim tautan, video, pesan suara, atau dokumen apa pun ke @ToolBoxMultiBot. Bot secara otomatis mendeteksi format dan menyediakan tindakan presisi langsung di Telegram tanpa iklan.",
     "trust_badge1": "⚡ 0s Instant Start",
     "trust_badge2": "🛡️ Zero Ads & Spam",
     "trust_badge3": "🔒 100% Private",
@@ -179,7 +179,7 @@ window.TOOLBOX_LOCALES.id = {
     "q1": "Bagaimana bot memproses berkas dan tautan saya?",
     "a1": "Bot menerima data melalui API Telegram resmi, memprosesnya dalam kontainer sementara yang terisolasi (FFmpeg, yt-dlp, Whisper), dan langsung menghapus berkas dari server segera setelah dikirimkan ke Anda.",
     "q2": "Bagaimana cara unduh video TikTok tanpa watermark?",
-    "a2": "Cukup salin tautan video atau slide TikTok dan kirimkan ke @Toolbox_Bot. Bot akan secara otomatis menghapus watermark dan mengirimkan video bersih dalam kualitas asli.",
+    "a2": "Cukup salin tautan video atau slide TikTok dan kirimkan ke @ToolBoxMultiBot. Bot akan secara otomatis menghapus watermark dan mengirimkan video bersih dalam kualitas asli.",
     "q3": "Apa yang terjadi jika berkas melebihi batas Telegram?",
     "a3": "Untuk berkas berukuran besar, bot secara otomatis mengunggahnya ke penyimpanan awan berkecepatan tinggi (Pixeldrain / Litterbox) dan memberikan tautan unduhan langsung.",
     "q4": "Bahasa apa saja yang didukung untuk transkripsi suara?",
@@ -192,7 +192,7 @@ window.TOOLBOX_LOCALES.id = {
   "cta": {
     "title": "Mulai gunakan Toolbox di Telegram",
     "desc": "Tanpa registrasi, tanpa aplikasi berat, tanpa situs meragukan. Cukup buka obrolan dengan bot.",
-    "btn": "Buka obrolan dengan @Toolbox_Bot 🚀"
+    "btn": "Buka obrolan dengan @ToolBoxMultiBot 🚀"
   },
   "footer": {
     "rights": "© 2026 ToolboxBot. Asisten otomasi media profesional untuk Telegram.",

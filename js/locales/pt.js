@@ -13,13 +13,13 @@ window.TOOLBOX_LOCALES.pt = {
     "compression": "Compression",
     "tariffs": "Planos",
     "faq": "FAQ",
-    "open_bot": "Abrir @Toolbox_Bot ↗"
+    "open_bot": "Abrir @ToolBoxMultiBot ↗"
   },
   "hero": {
     "badge": "Assistente Multimídia e Automação com IA no Telegram",
     "headline_p1": "Um único bot para baixar, transcrever,",
     "headline_highlight": "converter e comprimir mídias.",
-    "subheadline": "Envie qualquer link, vídeo, mensagem de voz ou documento para o @Toolbox_Bot. O bot identifica o formato e fornece ações precisas diretamente no Telegram sem anúncios.",
+    "subheadline": "Envie qualquer link, vídeo, mensagem de voz ou documento para o @ToolBoxMultiBot. O bot identifica o formato e fornece ações precisas diretamente no Telegram sem anúncios.",
     "trust_badge1": "⚡ 0s Instant Start",
     "trust_badge2": "🛡️ Zero Ads & Spam",
     "trust_badge3": "🔒 100% Private",
@@ -179,7 +179,7 @@ window.TOOLBOX_LOCALES.pt = {
     "q1": "Como o bot processa meus arquivos e links?",
     "a1": "O bot recebe os dados pela API oficial do Telegram, processa em ambientes isolados temporários (FFmpeg, yt-dlp, Whisper) e apaga permanentemente todos os arquivos do servidor logo após o envio.",
     "q2": "Como baixar do TikTok sem marca d'água?",
-    "a2": "Basta copiar o link do vídeo ou carrossel do TikTok e enviar ao @Toolbox_Bot. O bot remove as marcas d'água e envia o arquivo limpo no bitrate original.",
+    "a2": "Basta copiar o link do vídeo ou carrossel do TikTok e enviar ao @ToolBoxMultiBot. O bot remove as marcas d'água e envia o arquivo limpo no bitrate original.",
     "q3": "O que acontece se o arquivo exceder o limite do Telegram?",
     "a3": "Para arquivos pesados, o bot gera automaticamente um link de download direto e seguro em armazenamento na nuvem (Pixeldrain / Litterbox).",
     "q4": "Quais idiomas são aceitos na transcrição de voz?",
@@ -192,7 +192,7 @@ window.TOOLBOX_LOCALES.pt = {
   "cta": {
     "title": "Comece a usar o Toolbox no Telegram",
     "desc": "Sem cadastros, sem instalar softwares pesados ou acessar sites suspeitos. Apenas abra o chat com o bot.",
-    "btn": "Abrir conversa com @Toolbox_Bot 🚀"
+    "btn": "Abrir conversa com @ToolBoxMultiBot 🚀"
   },
   "footer": {
     "rights": "© 2026 ToolboxBot. Assistente profissional de mídia para Telegram.",

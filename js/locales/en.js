@@ -13,13 +13,13 @@ window.TOOLBOX_LOCALES.en = {
     compression: "Compression",
     tariffs: "Pricing",
     faq: "FAQ",
-    open_bot: "Launch @Toolbox_Bot ↗"
+    open_bot: "Launch @ToolBoxMultiBot ↗"
   },
   hero: {
     badge: "Telegram Media & AI Automation Assistant",
     headline_p1: "One bot to download, transcribe,",
     headline_highlight: "convert, and compress media.",
-    subheadline: "Send any link, video, voice note, or document to @Toolbox_Bot. The bot automatically detects the format and offers precise actions inside Telegram with zero ads, captchas, or sketchy websites.",
+    subheadline: "Send any link, video, voice note, or document to @ToolBoxMultiBot. The bot automatically detects the format and offers precise actions inside Telegram with zero ads, captchas, or sketchy websites.",
     trust_badge1: "⚡ 0s Instant Start",
     trust_badge2: "🛡️ Zero Ads & Spam",
     trust_badge3: "🔒 100% Private",
@@ -194,7 +194,7 @@ window.TOOLBOX_LOCALES.en = {
   cta: {
     title: "Supercharge Your Telegram Media Workflow Today",
     desc: "No registrations, no suspicious download sites, no bulky software. Just start a conversation with the bot.",
-    btn: "Launch @Toolbox_Bot in Telegram 🚀"
+    btn: "Launch @ToolBoxMultiBot in Telegram 🚀"
   },
   footer: {
     rights: "© 2026 ToolboxBot. Professional Media Toolkit for Telegram.",

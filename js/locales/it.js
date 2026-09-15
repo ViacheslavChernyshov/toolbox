@@ -13,13 +13,13 @@ window.TOOLBOX_LOCALES.it = {
     "compression": "Compression",
     "tariffs": "Piani",
     "faq": "FAQ",
-    "open_bot": "Apri @Toolbox_Bot ↗"
+    "open_bot": "Apri @ToolBoxMultiBot ↗"
   },
   "hero": {
     "badge": "Assistente Multimediale e Automazione IA per Telegram",
     "headline_p1": "Un unico bot per scaricare, trascrivere,",
     "headline_highlight": "convertire e comprimere file multimediali.",
-    "subheadline": "Invia qualsiasi link, video, vocale o documento a @Toolbox_Bot. Il bot rileva automaticamente il formato e offre comandi precisi su Telegram senza pubblicità né siti esterni.",
+    "subheadline": "Invia qualsiasi link, video, vocale o documento a @ToolBoxMultiBot. Il bot rileva automaticamente il formato e offre comandi precisi su Telegram senza pubblicità né siti esterni.",
     "trust_badge1": "⚡ 0s Instant Start",
     "trust_badge2": "🛡️ Zero Ads & Spam",
     "trust_badge3": "🔒 100% Private",
@@ -179,7 +179,7 @@ window.TOOLBOX_LOCALES.it = {
     "q1": "Come vengono gestiti i miei file e link?",
     "a1": "Il bot riceve i contenuti tramite l'API ufficiale di Telegram, li elabora in container temporanei isolati (FFmpeg, yt-dlp, Whisper) e cancella definitivamente i file dal server subito dopo la consegna.",
     "q2": "Come posso scaricare da TikTok senza logo?",
-    "a2": "Copia il link del video o del carosello foto e invialo a @Toolbox_Bot. Il bot rimuoverà il logo e invierà il file pulito.",
+    "a2": "Copia il link del video o del carosello foto e invialo a @ToolBoxMultiBot. Il bot rimuoverà il logo e invierà il file pulito.",
     "q3": "Cosa succede se un file supera il limite di Telegram?",
     "a3": "Per file superiori al limite consentito, il bot genera in automatico un link di download diretto su storage protetto (Pixeldrain / Litterbox).",
     "q4": "Quali lingue supporta la trascrizione vocale?",
@@ -192,7 +192,7 @@ window.TOOLBOX_LOCALES.it = {
   "cta": {
     "title": "Inizia a usare Toolbox su Telegram",
     "desc": "Nessuna registrazione, nessuna app pesante o sito web invasivo. Basta aprire la chat con il bot.",
-    "btn": "Apri la chat con @Toolbox_Bot 🚀"
+    "btn": "Apri la chat con @ToolBoxMultiBot 🚀"
   },
   "footer": {
     "rights": "© 2026 ToolboxBot. Suite multimediale professionale per Telegram.",

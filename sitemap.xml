@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://viacheslavchernyshov.github.io/toolbox/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viacheslavchernyshov.github.io/toolbox/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://viacheslavchernyshov.github.io/toolbox/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viacheslavchernyshov.github.io/toolbox/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viacheslavchernyshov.github.io/toolbox/?lang=uk"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://viacheslavchernyshov.github.io/toolbox/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://viacheslavchernyshov.github.io/toolbox/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://viacheslavchernyshov.github.io/toolbox/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://viacheslavchernyshov.github.io/toolbox/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://viacheslavchernyshov.github.io/toolbox/?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://viacheslavchernyshov.github.io/toolbox/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://viacheslavchernyshov.github.io/toolbox/?lang=fa"/>
+  </url>
+</urlset>

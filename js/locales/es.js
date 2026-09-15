@@ -13,13 +13,13 @@ window.TOOLBOX_LOCALES.es = {
     "compression": "Compression",
     "tariffs": "Tarifas",
     "faq": "FAQ",
-    "open_bot": "Abrir @Toolbox_Bot ↗"
+    "open_bot": "Abrir @ToolBoxMultiBot ↗"
   },
   "hero": {
     "badge": "Asistente Multimedia y Automatización IA en Telegram",
     "headline_p1": "Un solo bot para descargar, transcribir,",
     "headline_highlight": "convertir y comprimir archivos.",
-    "subheadline": "Envía cualquier enlace, video, nota de voz o documento a @Toolbox_Bot. El bot detectará el formato y ofrecerá acciones precisas en Telegram sin anuncios ni sitios web externos.",
+    "subheadline": "Envía cualquier enlace, video, nota de voz o documento a @ToolBoxMultiBot. El bot detectará el formato y ofrecerá acciones precisas en Telegram sin anuncios ni sitios web externos.",
     "trust_badge1": "⚡ 0s Instant Start",
     "trust_badge2": "🛡️ Zero Ads & Spam",
     "trust_badge3": "🔒 100% Private",
@@ -179,7 +179,7 @@ window.TOOLBOX_LOCALES.es = {
     "q1": "¿Cómo procesa el bot mis archivos y enlaces?",
     "a1": "El bot recibe el contenido mediante la API oficial de Telegram, lo procesa de forma aislada en contenedores temporales (FFmpeg, yt-dlp, Whisper) y elimina todos los archivos del servidor inmediatamente tras la entrega.",
     "q2": "¿Cómo descargo videos de TikTok sin marca de agua?",
-    "a2": "Copia el enlace del video o carrusel de TikTok y envíalo a @Toolbox_Bot. El bot eliminará automáticamente las marcas de agua y entregará el video limpio en bitrate original.",
+    "a2": "Copia el enlace del video o carrusel de TikTok y envíalo a @ToolBoxMultiBot. El bot eliminará automáticamente las marcas de agua y entregará el video limpio en bitrate original.",
     "q3": "¿Qué pasa si un archivo supera el límite de Telegram?",
     "a3": "Para archivos mayores al límite permitido, el bot genera automáticamente un enlace de descarga directa en almacenamiento seguro en la nube (Pixeldrain / Litterbox).",
     "q4": "¿Qué idiomas admite la transcripción de voz?",
@@ -192,7 +192,7 @@ window.TOOLBOX_LOCALES.es = {
   "cta": {
     "title": "Comienza a usar Toolbox en Telegram",
     "desc": "Sin registros, sin descargas pesadas ni páginas dudosas. Solo abre el chat con el bot.",
-    "btn": "Abrir chat con @Toolbox_Bot 🚀"
+    "btn": "Abrir chat con @ToolBoxMultiBot 🚀"
   },
   "footer": {
     "rights": "© 2026 ToolboxBot. Asistente multimedia profesional para Telegram.",
