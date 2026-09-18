@@ -50,24 +50,10 @@
         "offers": [
           {
             "@type": "Offer",
-            "name": "Free Tier",
+            "name": "100% Free & Open Utility",
             "price": "0",
             "priceCurrency": "USD",
-            "description": "5 free actions every 24 hours, 1080p video, MP3 extraction"
-          },
-          {
-            "@type": "Offer",
-            "name": "Lite Tier",
-            "price": "100",
-            "priceCurrency": "XTR",
-            "description": "100 actions/mo, 1080p, 20 min Whisper AI, 1GB cloud upload"
-          },
-          {
-            "@type": "Offer",
-            "name": "PRO Tier",
-            "price": "200",
-            "priceCurrency": "XTR",
-            "description": "Unlimited queue, 4K/8K downloads, unlimited Whisper AI, 20GB cloud upload"
+            "description": "Complete free access to 4K/8K downloads, Whisper AI transcription, conversion, and compression for everyone"
           }
         ],
         "aggregateRating": {
@@ -151,7 +137,7 @@
           <li><a href="#matrix" class="linear-nav-link" data-i18n="nav.matrix">Матрица действий</a></li>
           <li><a href="#compression" class="linear-nav-link" data-i18n="nav.compression">Сжатие</a></li>
           <li><a href="#platforms" class="linear-nav-link" data-i18n="nav.platforms">1700+ сервисов</a></li>
-          <li><a href="#tariffs" class="linear-nav-link" data-i18n="nav.tariffs">Тарифы</a></li>
+          <li><a href="#tariffs" class="linear-nav-link" data-i18n="nav.tariffs">Бесплатно & Донаты</a></li>
           <li><a href="#faq" class="linear-nav-link" data-i18n="nav.faq">FAQ</a></li>
         </ul>
       </nav>
@@ -1000,87 +986,63 @@
     </div>
   </section>
 
-  <!-- Pricing / Tiers (3 Plans: Free, Lite, PRO) -->
+  <!-- Pricing / Tiers (100% Free + Voluntary Donations) -->
   <section class="tiers-section" id="tariffs">
     <div class="container">
       <div class="section-header-linear" style="text-align: center;">
-        <span class="section-label-linear" data-i18n="tiers.badge">ПРОЗРАЧНЫЕ УСЛОВИЯ</span>
-        <h2 class="section-title-linear" data-i18n="tiers.title">Тарифные планы</h2>
+        <span class="section-label-linear" data-i18n="tiers.badge">100% БЕСПЛАТНО ДЛЯ ВСЕХ</span>
+        <h2 class="section-title-linear" data-i18n="tiers.title">Свободный доступ и поддержка</h2>
         <p class="section-desc-linear" style="margin: 0 auto;" data-i18n="tiers.desc">
-          Базовые возможности доступны каждому пользователю бесплатно каждый день. Для профи — безлимит за Telegram Stars.
+          Никаких платных подписок, скрытых комиссий или пейволлов. Все функции открыты для каждого. Проект живет благодаря добровольным донатам сообщества.
         </p>
       </div>
 
-      <div class="tiers-grid">
-        <!-- 1. Free Tier -->
-        <div class="tier-card">
+      <div class="tiers-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 900px; margin: 0 auto;">
+        <!-- 1. 100% Free Plan -->
+        <div class="tier-card pro-card" style="border-color: rgba(46, 213, 115, 0.4);">
           <div class="tier-header">
             <div class="tier-top-meta">
-              <h3 class="tier-name" data-i18n="tiers.free_title">Free Plan</h3>
-              <span class="tech-tag">FREE</span>
+              <h3 class="tier-name" data-i18n="tiers.free_title">Все функции открыты</h3>
+              <span class="tech-tag" style="background: rgba(46, 213, 115, 0.15); color: #2ed573; border-color: rgba(46, 213, 115, 0.3);">100% FREE</span>
             </div>
             <div class="tier-price-row">
-              <span class="tier-price-val" data-i18n="tiers.free_price">0 ⭐️ / Навсегда</span>
+              <span class="tier-price-val" style="color: #2ed573;" data-i18n="tiers.free_price">0 ⭐️ / Навсегда</span>
             </div>
-            <p class="tier-desc" data-i18n="tiers.free_desc">Для регулярных повседневных задач</p>
+            <p class="tier-desc" data-i18n="tiers.free_desc">Полный функционал без пейволлов и ограничений</p>
           </div>
           <ul class="tier-features-list">
-            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f1">5 действий каждые сутки</span></li>
-            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f2">Скачивание видео до 1080p Full HD</span></li>
-            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f3">Извлечение аудио MP3 и обложек</span></li>
-            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f4">Конвертация форматов и сжатие</span></li>
-            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f5">Генерация QR-кодов и хеширование</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f1">Безлимитные действия для каждого</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f2">Скачивание видео в честном 4K и 8K качестве</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f3">Whisper AI транскрибация голоса</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f4">Конвертация форматов, сжатие до 85%</span></li>
+            <li class="tier-feature-item"><span class="tier-check">✓</span> <span data-i18n="tiers.free_f5">Политика Zero-Retention (файлы не хранятся)</span></li>
           </ul>
-          <a href="https://t.me/ToolBoxMultiBot?start=w_tar_free" target="_blank" rel="noopener noreferrer" class="btn-linear btn-linear-secondary" style="width: 100%;" data-placement="w_tar_free" data-i18n="tiers.free_cta">
-            Начать бесплатно
+          <a href="https://t.me/ToolBoxMultiBot?start=w_tar_free" target="_blank" rel="noopener noreferrer" class="btn-linear btn-linear-primary" style="width: 100%;" data-placement="w_tar_free" data-i18n="tiers.free_cta">
+            Открыть бота бесплатно 🚀
           </a>
         </div>
 
-        <!-- 2. LITE Tier -->
-        <div class="tier-card lite-card">
+        <!-- 2. Community Donations -->
+        <div class="tier-card" style="border-color: rgba(255, 168, 1, 0.3);">
           <div class="tier-header">
             <div class="tier-top-meta">
-              <h3 class="tier-name" data-i18n="tiers.lite_title">Toolbox LITE</h3>
-              <span class="tech-tag blue" data-i18n="tiers.lite_badge">ХИТ</span>
+              <h3 class="tier-name" data-i18n="tiers.donate_title">Поддержка проекта</h3>
+              <span class="tech-tag amber" data-i18n="tiers.donate_badge">DONATE</span>
             </div>
             <div class="tier-price-row">
-              <span class="tier-price-val" style="color: #828fff;" data-i18n="tiers.lite_price">100 ⭐️ Stars / мес</span>
+              <span class="tier-price-val" style="color: #ffa801;" data-i18n="tiers.donate_price">По желанию ⭐️</span>
             </div>
-            <p class="tier-desc" data-i18n="tiers.lite_desc">Оптимально для регулярного скачивания и конвертации</p>
+            <p class="tier-desc" data-i18n="tiers.donate_desc">Добровольное пожертвование на серверы и хостинг</p>
           </div>
           <ul class="tier-features-list">
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.lite_f1">100 действий каждый месяц</span></li>
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.lite_f2">Скачивание видео до 1080p Full HD</span></li>
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.lite_f3">20 минут Whisper AI транскрибации</span></li>
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.lite_f4">Облачная загрузка файлов до 1 ГБ</span></li>
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.lite_f5">Стандартная приоритетная очередь</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.donate_f1">Оплата мощных CPU/GPU серверов</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.donate_f2">Развитие открытого кода и новых фич</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.donate_f3">Договор дарения (ст. 506 ГК РК)</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.donate_f4">Никаких встречных обязательств</span></li>
+            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.donate_f5">Благодарность сообщества в профиле</span></li>
           </ul>
-          <a href="https://t.me/ToolBoxMultiBot?start=w_tar_lite" target="_blank" rel="noopener noreferrer" class="btn-linear btn-linear-brand" style="width: 100%;" data-placement="w_tar_lite" data-i18n="tiers.lite_cta">
-            Подключить Lite (/buy)
-          </a>
-        </div>
-
-        <!-- 3. PRO Tier -->
-        <div class="tier-card pro-card">
-          <div class="tier-header">
-            <div class="tier-top-meta">
-              <h3 class="tier-name" data-i18n="tiers.pro_title">Toolbox PRO</h3>
-              <span class="tech-tag amber" data-i18n="tiers.pro_badge">UNLIMITED</span>
-            </div>
-            <div class="tier-price-row">
-              <span class="tier-price-val" style="color: #fbbf24;" data-i18n="tiers.pro_price">200 ⭐️ Stars / мес</span>
-            </div>
-            <p class="tier-desc" data-i18n="tiers.pro_desc">Для активных пользователей, блогеров и контент-мейкеров</p>
-          </div>
-          <ul class="tier-features-list">
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f1">Безлимитная очередь (9999 действий)</span></li>
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f2">Скачивание в честном 4K и 8K качестве</span></li>
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f3">Безлимитная Whisper AI транскрибация</span></li>
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f4">Облачная выгрузка файлов до 20 ГБ</span></li>
-            <li class="tier-feature-item highlight"><span class="tier-check">✓</span> <span data-i18n="tiers.pro_f5">Высший приоритет вычислительных воркеров</span></li>
-          </ul>
-          <a href="https://t.me/ToolBoxMultiBot?start=w_tar_pro" target="_blank" rel="noopener noreferrer" class="btn-linear btn-linear-primary" style="width: 100%;" data-placement="w_tar_pro" data-i18n="tiers.pro_cta">
-            Подключить PRO (/buy)
+          <a href="https://t.me/ToolBoxMultiBot?start=w_donate" target="_blank" rel="noopener noreferrer" class="btn-linear btn-linear-brand" style="width: 100%;" data-placement="w_donate" data-i18n="tiers.donate_cta">
+            Поддержать донатом (/donate) ☕
           </a>
         </div>
       </div>
@@ -1207,6 +1169,10 @@
       </div>
 
       <ul class="footer-nav-linear">
+        <li><a href="terms.html">Условия (Terms)</a></li>
+        <li><a href="privacy.html">Конфиденциальность (Privacy)</a></li>
+        <li><a href="dmca.html">Правообладателям (DMCA)</a></li>
+        <li><a href="donations.html">Донаты (Donations)</a></li>
         <li><a href="https://github.com/ViacheslavChernyshov/Toolbox" target="_blank" rel="noopener noreferrer" data-i18n="footer.github">GitHub</a></li>
         <li><a href="https://t.me/ToolBoxMultiBot?start=w_footer" target="_blank" rel="noopener noreferrer" data-placement="w_footer" data-i18n="footer.bot">Telegram Бот</a></li>
       </ul>
